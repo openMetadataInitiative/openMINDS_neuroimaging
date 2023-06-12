@@ -1,0 +1,11 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/Assessment",
+  "properties": {
+    "assessmentType": {
+      "_instruction": "Add the type of this assessment",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/AssessmentType"
+      ]
+    }
+  }
+}
