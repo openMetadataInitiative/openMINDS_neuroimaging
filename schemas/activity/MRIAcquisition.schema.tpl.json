@@ -1,0 +1,36 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/SubjectPreparation",
+  "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
+  "properties": {
+    "behavioralProtocol": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all behavioral protocols that were performed during this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/BehavioralProtocol"
+      ]
+    },
+    "device": {
+      "_instruction": "Add the MRI machine used for this image acquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/scannerHardware"
+      ]
+    },
+    "input": {
+      "_instruction": "Add the state of the subject before this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/SubjectState"
+      ]
+    },
+    "physiologicalSignals": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all the physiological signals gatehred during this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/physiologicalSignalType"
+      ]
+    }
+  }
+}
