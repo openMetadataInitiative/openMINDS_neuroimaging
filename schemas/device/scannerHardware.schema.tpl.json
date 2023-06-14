@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/scannerHardware",
+  "_type": "https://openminds.ebrains.eu/MRI/ScannerHardware",
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "properties": {}
 }

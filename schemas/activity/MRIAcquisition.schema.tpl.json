@@ -12,9 +12,9 @@
       ]
     },
     "device": {
-      "_instruction": "Add the MRI machine used for this image acquisition.",
+      "_instruction": "Add the MRI machine setting used for this image acquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/scannerHardware"
+        "https://openminds.ebrains.eu/MRI/scannerHardwareUsage"
       ]
     },
     "input": {

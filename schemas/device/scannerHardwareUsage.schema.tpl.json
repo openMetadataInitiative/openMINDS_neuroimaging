@@ -1,0 +1,5 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage",
+  "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
+  "properties": {}
+}
