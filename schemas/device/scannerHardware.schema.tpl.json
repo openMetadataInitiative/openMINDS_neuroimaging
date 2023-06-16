@@ -1,5 +1,16 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/ScannerHardware",
   "_extends": "/core/schemas/products/device.schema.tpl.json",
-  "properties": {}
+  "properties": {
+    "magneticFieldStrength": {
+      "_instruction": "Enter the nominal field strength of MR magnet in Tesla.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "stationName": {
+      "type": "string",
+      "_instruction": "Enter institution defined name of this Scanner"
+    }
+  }
 }

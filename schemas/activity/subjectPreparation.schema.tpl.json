@@ -8,7 +8,7 @@
       "uniqueItems": true,
       "_instruction": "Add All the assessments aquired during this session.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/assessment"
+        "https://openminds.ebrains.eu/MRI/Assessment"
       ]
     },
     "behavioralProtocol": {
@@ -38,7 +38,8 @@
       "uniqueItems": true,
       "_instruction": "Add all the physiological signals gatehred during this session.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/physiologicalSignalType"
+        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType",
+        "https://openminds.ebrains.eu/MRI/physiologicalSignal"
       ]
     }
   }

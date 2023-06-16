@@ -1,5 +1,5 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRI",
-  "_extends": "https://openminds.ebrains.eu/MRI/MRIImage",
+  "_extends": "/MRI/MRIImage",
   "properties": {}
 }

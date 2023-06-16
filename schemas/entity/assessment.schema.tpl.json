@@ -1,10 +1,17 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/Assessment",
+  "_extends": "/publications/schemas/creativeWork.schema.tpl.json",
   "properties": {
     "assessmentType": {
       "_instruction": "Add the type of this assessment",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/AssessmentType"
+      ]
+    },
+    "webResource": {
+      "_instruction": "Add online version of this assetment.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/WebResource"
       ]
     }
   }

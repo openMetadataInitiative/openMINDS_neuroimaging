@@ -1,0 +1,15 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/physiologicalSignal",
+  "required": [
+    "physiologicalSignalType"
+  ],
+  "_extends": "/ephys/Recording",
+  "properties": {
+    "physiologicalSignalType": {
+      "_instruction": "Add the type of this physiological signal",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType"
+      ]
+    }
+  }
+}
