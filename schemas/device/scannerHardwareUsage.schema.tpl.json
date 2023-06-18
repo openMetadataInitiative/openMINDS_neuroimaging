@@ -1,5 +1,34 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
-  "properties": {}
+  "properties": {
+    "mRAcquisitionType": {
+      "_instruction": "Add the type of sequence readout.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/MRAcquisitionType"
+      ]
+    },
+    "nonlinearGradientCorrection": {
+      "type": "boolean",
+      "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?"
+    },
+    "pulseSequenceType": {
+      "_instruction": "Add the type pulse sequence used for this scan.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/PulseSequenceType"
+      ]
+    },
+    "sequenceName": {
+      "type": "string",
+      "_instruction": "Enter the sequance name for this scan."
+    },
+    "mTState": {
+      "type": "boolean",
+      "_instruction": "Boolean stating whether the magnetization transfer pulse is applied."
+    },
+    "spoilingState": {
+      "type": "boolean",
+      "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization."
+    }
+  }
 }

@@ -11,6 +11,10 @@
     "stationName": {
       "type": "string",
       "_instruction": "Enter institution defined name of this Scanner"
+    },
+    "receiveCoilName": {
+      "type": "string",
+      "_instruction": "Enter information describing the receiver coil."
     }
   }
 }
