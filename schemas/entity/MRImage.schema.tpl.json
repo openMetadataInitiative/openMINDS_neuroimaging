@@ -1,0 +1,34 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/MRImage",
+  "required": [
+    "dataLocation",
+    "recordedWith"
+  ],
+  "properties": {
+    "additionalRemarks": {
+      "type": "string",
+      "_instruction": "Enter any additional remarks concerning this MR image."
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
+      ]
+    },
+    "internalIdentifier": {
+      "type": "string",
+      "_instruction": "Enter the identifier (or label) of this image that is used within the corresponding data files to identify this recording."
+    },
+    "name": {
+      "type": "string",
+      "_instruction": "Enter a descriptive name for this image."
+    },
+    "recordedWith": {
+      "_instruction": "Add the device used to generate this recording.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage"
+      ]
+    }
+  }
+}
