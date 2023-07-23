@@ -29,6 +29,70 @@
       "_linkedTypes": [
         "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage"
       ]
+    },
+    "flipAngle": {
+      "_instruction": "Enter the flip angele of this MR image in degrees.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "fieldOfView": {
+      "type": "string",
+      "_instruction": "Enter the field of view of this image."
+    },
+    "negativeContrast": {
+      "type": "boolean",
+      "_instruction": "Boolean specifying whether increasing voxel intensity (within sample voxels) denotes a decreased value with respect to the contrast suffix."
+    },
+    "echoTime": {
+      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "numberOfSlices": {
+      "_instruction": "Enter number of slices in this MR image.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "sliceEncodingDirection": {
+      "_instruction": "Add axis of the NIfTI data along which slices were acquired, and the direction in which 'SliceTiming' is defined with respect to.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
+      ]
+    },
+    "AnatomicalLandmarkCoordinates": {},
+    "sliceTiming": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "_instruction": "Enter the time in which each slice have been aquired within each vloume.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "voxelSize": {
+      "type": "string",
+      "_instruction": "Enter voxel size this image."
+    },
+    "dwellTime": {
+      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "sliceThickness": {
+      "_instruction": "Enter the slice thickness of this MR image.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "interSliceGap": {
+      "_instruction": "Enter the inter slice disctance between slices of this MR image.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
     }
   }
 }

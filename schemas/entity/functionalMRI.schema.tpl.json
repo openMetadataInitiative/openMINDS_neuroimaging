@@ -1,5 +1,28 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRI",
   "_extends": "/MRI/MRIImage",
-  "properties": {}
+  "properties": {
+    "repetitionTime": {
+      "_instruction": "Enter the echo time of this aquistion (TR).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "echoTime": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the echo times of this aquistion (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "hasFieldMap": {},
+    "fieldMaps": {},
+    "taskNames": {},
+    "numberOfVolumesDiscardedByScanner": {},
+    "numberOfVolumesDiscardedByUser": {},
+    "acquisitionDuration": {},
+    "delayAfterTrigger": {}
+  }
 }

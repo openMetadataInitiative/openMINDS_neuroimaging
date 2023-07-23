@@ -39,12 +39,6 @@
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
       ]
-    },
-    "echoTime": {
-      "_instruction": "Enter the echo time of this aquistion.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
     }
   }
 }
