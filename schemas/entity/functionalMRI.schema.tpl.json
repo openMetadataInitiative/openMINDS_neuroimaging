@@ -17,12 +17,52 @@
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
     },
-    "hasFieldMap": {},
-    "fieldMaps": {},
-    "taskNames": {},
-    "numberOfVolumesDiscardedByScanner": {},
-    "numberOfVolumesDiscardedByUser": {},
-    "acquisitionDuration": {},
-    "delayAfterTrigger": {}
+    "fieldMap": {
+      "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/fieldMap"
+      ]
+    },
+    "task": {
+      "_instruction": "Add the tasks used for this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/Task"
+      ]
+    },
+    "volumeTiming": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "_instruction": "Enter aquistion times each vloume.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "numberOfVolumesDiscardedByScanner": {
+      "type": "number",
+      "_instruction": "Enter number of volumes discarded by scanner before the first volume."
+    },
+    "numberOfVolumesDiscardedByUser": {
+      "type": "number",
+      "_instruction": "Enter number of volumes discarded by user before the first volume."
+    },
+    "acquisitionDuration": {
+      "_instruction": "Enter duration of volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayTime": {
+      "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayAfterTrigger": {
+      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    }
   }
 }

@@ -77,7 +77,7 @@
       "_instruction": "Enter voxel size this image."
     },
     "dwellTime": {
-      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "_instruction": "Enter the dewell time of this aquistion.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
