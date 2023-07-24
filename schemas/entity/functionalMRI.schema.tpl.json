@@ -20,7 +20,7 @@
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquistion.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/fieldMap"
+        "https://openminds.ebrains.eu/MRI/FieldMap"
       ]
     },
     "task": {
