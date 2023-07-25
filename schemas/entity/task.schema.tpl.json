@@ -1,4 +1,32 @@
 {
+  "comment": "Do we really need this or just a protocol is enough?",
   "_type": "https://openminds.ebrains.eu/MRI/Task",
-  "properties": {}
+  "required": [
+    "description",
+    "name"
+  ],
+  "properties": {
+    "HEDFile": {
+      "_instruction": "Add the HED file describing this task.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "_instruction": "Enter a description of this task."
+    },
+    "name": {
+      "type": "string",
+      "_instruction": "Enter a descriptive name for this task."
+    },
+    "cogAtlasID": {
+      "type": "string",
+      "_instruction": "Enter the Cognitive Atlas (https://www.cognitiveatlas.org/) ID this task."
+    },
+    "cogPOID": {
+      "type": "string",
+      "_instruction": "Enter the CogPO (http://www.cogpo.org/) ID of this task."
+    }
+  }
 }

@@ -1,5 +1,4 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/MRImage",
   "required": [
     "dataLocation",
     "recordedWith"

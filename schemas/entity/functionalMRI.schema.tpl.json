@@ -1,6 +1,7 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRI",
   "_extends": "/MRI/MRIImage",
+  "required": [],
   "properties": {
     "repetitionTime": {
       "_instruction": "Enter the echo time of this aquistion (TR).",
@@ -62,6 +63,12 @@
       "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum).",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "structuralMRI": {
+      "_instruction": "Add the structural MRI relavent for this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/StructuralMRI"
       ]
     }
   }

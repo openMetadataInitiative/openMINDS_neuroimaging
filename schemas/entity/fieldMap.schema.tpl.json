@@ -1,0 +1,25 @@
+{
+  "comment": "Maybe fieldMapData is a better name",
+  "_type": "https://openminds.ebrains.eu/MRI/FieldMap",
+  "required": [
+    "dataLocation",
+    "recordedWith"
+  ],
+  "properties": {
+    "fieldMapType": {
+      "_instruction": "Add the type of this field map.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/FieldMapType"
+      ]
+    },
+    "dataLocation": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add the location of the files in which the fieldmap image is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    }
+  }
+}

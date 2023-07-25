@@ -1,0 +1,13 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/StructuralMRI",
+  "_extends": "/MRI/MRIImage",
+  "required": [],
+  "properties": {
+    "structuralMRIType": {
+      "_instruction": "Add the type of this Structural MRI.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/StructuralMRIType"
+      ]
+    }
+  }
+}
