@@ -8,6 +8,13 @@
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/StructuralMRIType"
       ]
+    },
+    "contrastAgent": {
+      "_instruction": "Add the contrast agent used for this Structural MRI.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
+        "https://openminds.ebrains.eu/chemicals/ProductSource"
+      ]
     }
   }
 }

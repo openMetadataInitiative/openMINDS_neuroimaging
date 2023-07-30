@@ -1,6 +1,42 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/DiffusionMRI",
   "_extends": "/MRI/MRIImage",
-  "required": [],
-  "properties": {}
+  "required": [
+    "bval",
+    "bvec"
+  ],
+  "properties": {
+    "sbref": {
+      "_instruction": "Add the single-band reference image for this volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "bval": {
+      "type": "array",
+      "minItems": 2,
+      "_instruction": "Enter all the b values of this aquistion in the order they are present in the file.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "bvec": {
+      "_instruction": "Add the b vecroe coresponding to this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "fieldMap": {
+      "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/B0FieldMap"
+      ]
+    },
+    "structuralMRI": {
+      "_instruction": "Add the structural MRI relavent for this aquistion.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/StructuralMRI"
+      ]
+    }
+  }
 }

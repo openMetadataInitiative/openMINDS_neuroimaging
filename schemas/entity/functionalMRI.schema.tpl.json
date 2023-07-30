@@ -1,7 +1,10 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRI",
   "_extends": "/MRI/MRIImage",
-  "required": [],
+  "required": [
+    "echoTime",
+    "task"
+  ],
   "properties": {
     "repetitionTime": {
       "_instruction": "Enter the echo time of this aquistion (TR).",
@@ -21,7 +24,7 @@
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquistion.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/FieldMap"
+        "https://openminds.ebrains.eu/MRI/B0FieldMap"
       ]
     },
     "task": {
@@ -34,7 +37,7 @@
       "type": "array",
       "minItems": 2,
       "uniqueItems": true,
-      "_instruction": "Enter aquistion times each vloume.",
+      "_instruction": "Enter aquistion times of each vloume.",
       "items": {
         "type": "number"
       }
@@ -69,6 +72,12 @@
       "_instruction": "Add the structural MRI relavent for this aquistion.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/MRI/StructuralMRI"
+      ]
+    },
+    "sbref": {
+      "_instruction": "Add the single-band reference image for this volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
       ]
     }
   }

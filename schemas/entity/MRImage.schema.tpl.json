@@ -72,8 +72,13 @@
       }
     },
     "voxelSize": {
-      "type": "string",
-      "_instruction": "Enter voxel size this image."
+      "type": "array",
+      "maxItems": 3,
+      "minItems": 3,
+      "_instruction": "Enter voxel size this image.",
+      "items": {
+        "type": "number"
+      }
     },
     "dwellTime": {
       "_instruction": "Enter the dewell time of this aquistion.",
