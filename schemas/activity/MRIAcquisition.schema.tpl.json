@@ -1,6 +1,10 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/SubjectPreparation",
+  "_type": "https://openminds.ebrains.eu/MRI/MRIAcquisition",
   "_extends": "/core/schemas/research/ExperimentalActivity.schema.tpl.json",
+  "required": [
+    "device",
+    "MRIModality"
+  ],
   "properties": {
     "behavioralProtocol": {
       "type": "array",
@@ -9,12 +13,6 @@
       "_instruction": "Add all behavioral protocols that were performed during this session.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/BehavioralProtocol"
-      ]
-    },
-    "MRIModality": {
-      "_instruction": "Add the MR image modality aquired during this aquistions",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MRIModality"
       ]
     },
     "device": {
@@ -29,13 +27,20 @@
         "https://openminds.ebrains.eu/core/SubjectState"
       ]
     },
+    "MRIModality": {
+      "_instruction": "Add the MR image modality aquired during this aquistions",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/MRIModality"
+      ]
+    },
     "physiologicalSignals": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
       "_instruction": "Add all the physiological signals gatehred during this session.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType"
+        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType",
+        "https://openminds.ebrains.eu/MRI/PhysiologicalSignal"
       ]
     }
   }

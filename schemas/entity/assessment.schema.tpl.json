@@ -1,6 +1,9 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/Assessment",
   "_extends": "/publications/schemas/creativeWork.schema.tpl.json",
+  "required": [
+    "assessmentType"
+  ],
   "properties": {
     "assessmentType": {
       "_instruction": "Add the type of this assessment",

@@ -8,7 +8,7 @@
       "uniqueItems": true,
       "_instruction": "Add All the assessments aquired during this session.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/assessment"
+        "https://openminds.ebrains.eu/MRI/Assessment"
       ]
     },
     "behavioralProtocol": {
@@ -26,7 +26,7 @@
       "uniqueItems": true,
       "_instruction": "Add the properties of the subject that contain the properties of the target population resulting in the inclusion of this subject.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/inclusionCriteria"
+        "https://openminds.ebrains.eu/controlledTerms/InclusionCriteria"
       ]
     },
     "input": {
