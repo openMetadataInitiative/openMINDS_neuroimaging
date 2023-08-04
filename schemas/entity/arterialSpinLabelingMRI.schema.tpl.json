@@ -4,12 +4,7 @@
   "required": [],
   "properties": {
     "arterialSpinLabelingContext": {
-      "type": "array",
-      "minItems": 1,
-      "_instruction": "Add the labels identifying each volum in order they are present and aquired.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/AslContext"
-      ]
+      "comment": "file"
     },
     "arterialSpinLabelingType": {
       "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
@@ -33,12 +28,6 @@
     "backgroundSuppression": {
       "type": "boolean",
       "_instruction": "Boolean specifying whether the background suppression have been used."
-    },
-    "m0ScanType": {
-      "_instruction": "Add the type of the M0 scan in this arterial spin labeling MR image.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/m0ScanType"
-      ]
     },
     "totalAcquiredPairs": {
       "type": "number",

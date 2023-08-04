@@ -15,8 +15,9 @@
     "echoTime": {
       "type": "array",
       "minItems": 1,
+      "maxItems": 2,
       "uniqueItems": true,
-      "_instruction": "Enter the echo times of this aquistion (TE).",
+      "_instruction": "Enter the echo times of this aquisition (TE).",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]

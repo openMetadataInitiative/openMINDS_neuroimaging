@@ -44,7 +44,7 @@
       "_instruction": "Boolean specifying whether increasing voxel intensity (within sample voxels) denotes a decreased value with respect to the contrast suffix."
     },
     "echoTime": {
-      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "_instruction": "Enter the echo time of this aquisition (TE).",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
@@ -81,13 +81,7 @@
       }
     },
     "dwellTime": {
-      "_instruction": "Enter the dewell time of this aquistion.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
-    },
-    "sliceThickness": {
-      "_instruction": "Enter the slice thickness of this MR image.",
+      "_instruction": "Enter the dewell time of this aquisition.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]

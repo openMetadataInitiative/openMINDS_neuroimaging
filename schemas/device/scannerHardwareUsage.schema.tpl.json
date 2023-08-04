@@ -3,7 +3,7 @@
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
     "mRAcquisitionType": {
-      "_instruction": "Add the type of sequence readout.",
+      "_instruction": "Add the type of sequence readout (2D or 3D).",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/MRAcquisitionType"
       ]

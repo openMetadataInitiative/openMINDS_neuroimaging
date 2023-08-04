@@ -28,7 +28,7 @@
       ]
     },
     "MRIModality": {
-      "_instruction": "Add the MR image modality aquired during this aquistions",
+      "_instruction": "Add the MR image modality aquired during this aquisitions",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/MRIModality"
       ]
@@ -39,8 +39,7 @@
       "uniqueItems": true,
       "_instruction": "Add all the physiological signals gatehred during this session.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType",
-        "https://openminds.ebrains.eu/MRI/PhysiologicalSignal"
+        "https://openminds.ebrains.eu/controlledTerms/PhysiologicalSignalType"
       ]
     }
   }
