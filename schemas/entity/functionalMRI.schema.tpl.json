@@ -34,13 +34,10 @@
       ]
     },
     "volumeTiming": {
-      "type": "array",
-      "minItems": 2,
-      "uniqueItems": true,
       "_instruction": "Enter aquisition times of each vloume.",
-      "items": {
-        "type": "number"
-      }
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
     },
     "numberOfVolumesDiscardedByScanner": {
       "type": "number",

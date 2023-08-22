@@ -4,7 +4,10 @@
   "required": [],
   "properties": {
     "arterialSpinLabelingContext": {
-      "comment": "file"
+      "_instruction": "Add the file containg the labels identifying each volum in order they are present and aquired (eg. .",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
     },
     "arterialSpinLabelingType": {
       "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",

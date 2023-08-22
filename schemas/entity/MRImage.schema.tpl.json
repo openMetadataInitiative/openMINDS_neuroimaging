@@ -88,13 +88,10 @@
       ]
     },
     "sliceTiming": {
-      "type": "array",
-      "minItems": 2,
-      "uniqueItems": true,
       "_instruction": "Enter the time in which each slice have been aquired within each vloume.",
-      "items": {
-        "type": "number"
-      }
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
     },
     "voxelSize": {
       "type": "array",
