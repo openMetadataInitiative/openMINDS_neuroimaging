@@ -1,0 +1,40 @@
+{
+  "comment": "Maybe fieldMapData is a better name",
+  "_type": "https://openminds.ebrains.eu/MRI/B0FieldMap",
+  "_extends": "/MRI/MRIImage",
+  "required": [
+    "fieldMapType"
+  ],
+  "properties": {
+    "b0FieldMapType": {
+      "_instruction": "Add the type of this B0 field map.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/FieldMapType"
+      ]
+    },
+    "echoTime": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the echo times of this aquisition (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "unit": {
+      "_instruction": "Add the unit of thid fieldmap. The unit is mandatory for fieldmaps provided in final format (mostly extracted by GE machines directly).",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/FieldMapType"
+      ]
+    },
+    "dataLocation": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add the location of the files in which the fieldmap image is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    }
+  }
+}

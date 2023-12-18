@@ -1,0 +1,73 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/ArterialSpinLabelingAcquisition",
+  "_extends": "/MRI/MRIAcquisition",
+  "required": [],
+  "properties": {
+    "arterialSpinLabelingType": {
+      "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
+      "_instruction": "Add the type of this arterial spin labeling MR image.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/ArterialSpinLabelingType"
+      ]
+    },
+    "postLabelingDelay": {
+      "_instruction": "Add the postlabeling delay (PLD) time, in seconds, after the end of the labeling (for 'CASL' or 'PCASL') or middle of the labeling pulse (for 'PASL') until the middle of the excitation pulse applied to the imaging slab (for 3D acquisition) or first slice.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "backgroundSuppression": {
+      "type": "boolean",
+      "_instruction": "Boolean specifying whether the background suppression have been used."
+    },
+    "totalAcquiredPairs": {
+      "type": "number",
+      "_instruction": "Add the total number of control-label pairs."
+    },
+    "vascularCrushing": {
+      "type": "boolean",
+      "_instruction": "Boolean indicating if Vascular Crushing is used."
+    },
+    "labelingOrientation": {
+      "type": "array",
+      "maxItems": 3,
+      "minItems": 3,
+      "_instruction": "Add orientation of the labeling plane ((P)CASL) or slab (PASL).",
+      "items": {
+        "type": "number"
+      }
+    },
+    "labelingDistance": {
+      "_instruction": "Add distance from the center of the imaging slab to the center of the labeling plane ((P)CASL) or the leading edge of the labeling slab (PASL).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "PCASLType": {
+      "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
+      "_instruction": "Add the type of this arterial spin labeling MR image.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/PCASLType"
+      ]
+    },
+    "CASLType": {
+      "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
+      "_instruction": "Add the type of this arterial spin labeling MR image.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/CASLType"
+      ]
+    },
+    "labelingDuration": {
+      "comment": "only for PCASL and CASL",
+      "_instruction": "Add total duration of the labeling pulse train, corresponding to the temporal width of the labeling bolus for 'PCASL' or 'CASL'.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "bolusCutOffFlag": {
+      "comment": "only for PASL",
+      "type": "boolean",
+      "_instruction": "Boolean indicating if a bolus cut-off technique is used."
+    }
+  }
+}

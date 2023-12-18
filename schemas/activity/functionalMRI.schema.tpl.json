@@ -1,0 +1,81 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRI",
+  "_extends": "/MRI/MRIImage",
+  "required": [
+    "echoTime",
+    "task"
+  ],
+  "properties": {
+    "repetitionTime": {
+      "_instruction": "Enter the echo time of this aquisition (TR).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "echoTime": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the echo times of this aquisition (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "fieldMap": {
+      "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/B0FieldMap"
+      ]
+    },
+    "task": {
+      "_instruction": "Add the tasks used for this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/Task"
+      ]
+    },
+    "volumeTiming": {
+      "_instruction": "Enter aquisition times of each vloume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
+    },
+    "numberOfVolumesDiscardedByScanner": {
+      "type": "number",
+      "_instruction": "Enter number of volumes discarded by scanner before the first volume."
+    },
+    "numberOfVolumesDiscardedByUser": {
+      "type": "number",
+      "_instruction": "Enter number of volumes discarded by user before the first volume."
+    },
+    "acquisitionDuration": {
+      "_instruction": "Enter duration of volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayTime": {
+      "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayAfterTrigger": {
+      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "structuralMRI": {
+      "_instruction": "Add the structural MRI relavent for this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/StructuralMRI"
+      ]
+    },
+    "sbref": {
+      "_instruction": "Add the single-band reference image for this volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    }
+  }
+}

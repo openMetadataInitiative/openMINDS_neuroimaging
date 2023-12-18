@@ -2,6 +2,28 @@
   "_type": "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
+    "dwellTime": {
+      "_instruction": "Enter the dewell time of this aquistion.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "echoTime": {
+      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "fieldOfView": {
+      "type": "string",
+      "_instruction": "Enter the field of view of this image."
+    },
+    "flipAngle": {
+      "_instruction": "Enter the flip angele of this MR image in degrees.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
     "mRAcquisitionType": {
       "_instruction": "Add the type of sequence readout (2D or 3D).",
       "_linkedTypes": [
@@ -39,6 +61,15 @@
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
       ]
+    },
+    "voxelSize": {
+      "type": "array",
+      "maxItems": 3,
+      "minItems": 3,
+      "_instruction": "Enter voxel size this image.",
+      "items": {
+        "type": "number"
+      }
     }
   }
 }

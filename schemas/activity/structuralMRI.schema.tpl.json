@@ -1,0 +1,20 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/StructuralMRI",
+  "_extends": "/MRI/MRIAcquisition",
+  "required": [],
+  "properties": {
+    "structuralMRIType": {
+      "_instruction": "Add the type of this Structural MRI.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/StructuralMRIType"
+      ]
+    },
+    "contrastAgent": {
+      "_instruction": "Add the contrast agent used for this Structural MRI.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
+        "https://openminds.ebrains.eu/chemicals/ProductSource"
+      ]
+    }
+  }
+}
