@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/StructuralMRI",
+  "_type": "https://openminds.ebrains.eu/MRI/StructuralMRIAcquisition",
   "_extends": "/MRI/MRIAcquisition",
   "required": [],
   "properties": {

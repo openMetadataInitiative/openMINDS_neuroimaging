@@ -9,11 +9,12 @@
         "https://openminds.ebrains.eu/controlledTerms/StructuralMRIType"
       ]
     },
-    "contrastAgent": {
-      "_instruction": "Add the contrast agent used for this Structural MRI.",
+    "targetAnatomicalLocation": {
+      "type": "array",
+      "minItems": 1,
+      "_instruction": "Add the all the target anatomical location in this MR image",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture",
-        "https://openminds.ebrains.eu/chemicals/ProductSource"
+        "https://openminds.ebrains.eu/sands/AnatomicalTargetPosition"
       ]
     }
   }

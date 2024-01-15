@@ -43,20 +43,6 @@
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
     },
-    "PCASLType": {
-      "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
-      "_instruction": "Add the type of this arterial spin labeling MR image.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/PCASLType"
-      ]
-    },
-    "CASLType": {
-      "comment": "Probebly should be merged with CASLType and arterialSpinLabelingType and PCASLType",
-      "_instruction": "Add the type of this arterial spin labeling MR image.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/CASLType"
-      ]
-    },
     "labelingDuration": {
       "comment": "only for PCASL and CASL",
       "_instruction": "Add total duration of the labeling pulse train, corresponding to the temporal width of the labeling bolus for 'PCASL' or 'CASL'.",

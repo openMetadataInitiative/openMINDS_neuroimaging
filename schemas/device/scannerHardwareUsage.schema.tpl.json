@@ -9,7 +9,10 @@
       ]
     },
     "echoTime": {
-      "_instruction": "Enter the echo time of this aquistion (TE).",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Enter the echo times of this aquisition (TE).",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]

@@ -1,0 +1,46 @@
+{
+  "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRIAcquisition",
+  "_extends": "/MRI/MRIAcquisition",
+  "required": [],
+  "properties": {
+    "behavioralProtocol": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "_instruction": "Add all behavioral protocols that were performed during this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/BehavioralProtocol"
+      ]
+    },
+    "repetitionTime": {
+      "_instruction": "Enter the echo time of this aquisition (TR).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "volumeTiming": {
+      "_instruction": "Enter aquisition times of each vloume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
+    },
+    "acquisitionDuration": {
+      "_instruction": "Enter duration of volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayTime": {
+      "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "delayAfterTrigger": {
+      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum).",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    }
+  }
+}
