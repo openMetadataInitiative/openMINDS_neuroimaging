@@ -1,27 +1,99 @@
 {
   "_extends": "/core/schemas/research/ExperimentalActivity.schema.tpl.json",
   "required": [
-    "device",
-    "MRIModality"
+    "device"
   ],
   "properties": {
+    "additionalRemarks": {
+      "_instruction": "Enter any additional remarks concerning this MR image.",
+      "type": "string"
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
+      ]
+    },
     "device": {
       "_instruction": "Add the MRI machine setting used for this image acquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/MRI/MRIScannerUsage"
+      ]
+    },
+    "fieldOfView": {
+      "_instruction": "Enter the field of view of this image.",
+      "type": "string"
+    },
+    "flipAngle": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the flip angele of this MR image in degrees."
+    },
+    "input": {
+      "_instruction": "Add the state of the subject or tissue sample before this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/SubjectState",
+        "https://openminds.ebrains.eu/core/TissueSampleState"
+      ]
+    },
+    "internalIdentifier": {
+      "_instruction": "Enter the identifier (or label) of this image that is used within the corresponding data files to identify this recording.",
+      "type": "string"
+    },
+    "interSliceGap": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the inter slice disctance between slices of this MR image."
+    },
+    "name": {
+      "_instruction": "Enter a descriptive name for this image.",
+      "type": "string"
+    },
+    "negativeContrast": {
+      "_instruction": "Boolean specifying whether increasing voxel intensity (within sample voxels) denotes a decreased value with respect to the contrast suffix.",
+      "type": "boolean"
+    },
+    "numberOfSlices": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter number of slices in this MR image."
+    },
+    "recordedWith": {
+      "_instruction": "Add the device used to generate this recording.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage"
       ]
     },
-    "input": {
-      "_instruction": "Add the state of the subject before this session.",
+    "sliceEncodingDirection": {
+      "_instruction": "Add axis of the NIfTI data along which slices were acquired, and the direction in which 'SliceTiming' is defined with respect to.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/SubjectState"
+        "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
       ]
     },
-    "MRIModality": {
-      "_instruction": "Add the MR image modality aquired during this aquistions",
+    "sliceThickness": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the slice thickness of this MR image."
+    },
+    "sliceTiming": {
+      "_instruction": "Enter the time in which each slice have been aquired within each vloume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MRIModality"
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
       ]
+    },
+    "voxelSize": {
+      "_instruction": "Enter voxel size this image.",
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
     }
   }
 }

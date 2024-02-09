@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/ScannerHardwareUsage",
+  "_type": "https://openminds.ebrains.eu/MRI/MRIScannerUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "properties": {
     "dwellTime": {
