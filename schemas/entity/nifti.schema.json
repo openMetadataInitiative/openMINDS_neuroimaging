@@ -1,0 +1,32 @@
+{
+    "_type": "https://openminds.ebrains.eu/MRI/Nifti",
+    "_zrequired": [],
+    "properties": {
+        "niftiVersion": {
+            "_instruction": "Add the version of this NIFTI ",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/AssessmentType"
+            ]
+        },
+        "numberOfDimentin": {
+            "_instruction": "Enter number of dimentions in this NITFI file, corrisponds to first numbre in dim array of nifti file",
+            "type": "integer"
+        },
+        "dimention": {
+            "_instruction": "Enter the dimentions of the file  ",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
+            "maxItems": 7,
+            "minItems": 2,
+            "type": "array"
+        },
+        "dataLocation": {
+            "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/core/FileBundle"
+            ]
+        }
+    }
+}
