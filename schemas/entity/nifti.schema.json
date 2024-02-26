@@ -1,24 +1,19 @@
 {
     "_type": "https://openminds.ebrains.eu/MRI/Nifti",
-    "_zrequired": [],
+    "required": [],
     "properties": {
-        "niftiVersion": {
-            "_instruction": "Add the version of this NIFTI ",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/AssessmentType"
-            ]
-        },
-        "numberOfDimentin": {
-            "_instruction": "Enter number of dimentions in this NITFI file, corrisponds to first numbre in dim array of nifti file",
-            "type": "integer"
-        },
-        "dimention": {
-            "_instruction": "Enter the dimentions of the file  ",
-            "_embeddedTypes": [
-                "https://openminds.ebrains.eu/core/QuantitativeValue"
-            ],
-            "maxItems": 7,
-            "minItems": 2,
+        "affineTransformation": {
+            "_instruction": "Enter the affine transformation map; corresponds to srow_x, srow_y, srow_z",
+            "items": {
+                "items": {
+                    "type": "number"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+            },
+            "maxItems": 3,
+            "minItems": 3,
             "type": "array"
         },
         "dataLocation": {
@@ -26,6 +21,79 @@
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/core/File",
                 "https://openminds.ebrains.eu/core/FileBundle"
+            ]
+        },
+        "dataType": {
+            "_instruction": "Add the data type of this nifti file, corresponds to datatype",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/ProgramingDataType"
+            ]
+        },
+        "dimention": {
+            "_instruction": "Enter the dimentions of this NITFI file, corrisponds to non zero numbre in dim array of nifti file after the dim[0]",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 7,
+            "minItems": 2,
+            "type": "array"
+        },
+        "gridSpacing": {
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
+            "_instruction": "Enter the voxel width along dimension of this NITFI file, corrisponds to pixdim[1] to pixdim[4], in the same order as first four elemts of dimention",
+            "maxItems": 4,
+            "type": "array"
+        },
+        "intentCode": {
+            "_instruction": "Add the intent_code field can be used to indicate that the voxel data has some particular meaning, corresponds to intent_code",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/NiftiIntentCode"
+            ]
+        },
+        "intentName": {
+            "_instruction": "Enter name for the data used, corresponds to intent_name",
+            "type": "string"
+        },
+        "niftiVersion": {
+            "_instruction": "Add the version of this NIFTI, corresponds to magic field of NIFTI header (e.g., ni1, n+1, n+2) ",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/NiftiVersion"
+            ]
+        },
+        "numberOfDimentin": {
+            "_instruction": "Enter number of dimentions in this NITFI file, corrisponds to first numbre in dim array of nifti file",
+            "type": "integer"
+        },
+        "quaternion": {
+            "_instruction": "Enter the quaternion representaion of rotaion matrix in order of b,c,d; corresponds to quatern_b, quatern_c, quatern_d",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+        },
+        "quaternionShift": {
+            "_instruction": "Enter the quaternion shifts in order of x,y,z; corresponds to qoffset_x, qoffset_y, qoffset_z",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+        },
+        "spatialUnit": {
+            "_instruction": "Add the spatial unit of this image, corresponds to first part of xyzt_units.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
+            ]
+        },
+        "temporalUnit": {
+            "_instruction": "Add the temporal unit of this image, corresponds to second part of xyzt_units.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
             ]
         }
     }
