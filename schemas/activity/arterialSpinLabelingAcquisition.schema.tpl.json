@@ -1,0 +1,74 @@
+{
+  "_extends": "/MRI/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/MRI/ArterialSpinLabelingAcquisition",
+  "required": [],
+  "properties": {
+    "arterialSpinLabelingContext": {
+      "_instruction": "Add the file containg the labels identifying each volum in order they are present and aquired (eg. .",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "arterialSpinLabelingType": {
+      "_instruction": "Add the type of this arterial spin labeling MR image.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/ArterialSpinLabelingType"
+      ]
+    },
+    "backgroundSuppression": {
+      "_instruction": "Boolean specifying whether the background suppression have been used.",
+      "type": "boolean"
+    },
+    "bolusCutOffFlag": {
+      "_instruction": "Boolean indicating if a bolus cut-off technique is used.",
+      "comment": "only for PASL",
+      "type": "boolean"
+    },
+    "labelingDistance": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Add distance from the center of the imaging slab to the center of the labeling plane ((P)CASL) or the leading edge of the labeling slab (PASL)."
+    },
+    "labelingDuration": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Add total duration of the labeling pulse train, corresponding to the temporal width of the labeling bolus for 'PCASL' or 'CASL'.",
+      "comment": "only for PCASL and CASL"
+    },
+    "labelingLocationDescription": {
+      "_instruction": "Enter any description of the location of the labeling plane ((P)CASL) or slab (PASL) that cannot be captured by other fields.",
+      "type": "string"
+    },
+    "labelingOrientation": {
+      "_instruction": "Add orientation of the labeling plane ((P)CASL) or slab (PASL).",
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "m0Image": {
+      "_instruction": "Add the M0image, if it is not stored inside the main NIfTI file.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "postLabelingDelay": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Add the postlabeling delay (PLD) time, in seconds, after the end of the labeling (for 'CASL' or 'PCASL') or middle of the labeling pulse (for 'PASL') until the middle of the excitation pulse applied to the imaging slab (for 3D acquisition) or first slice."
+    },
+    "totalAcquiredPairs": {
+      "_instruction": "Add the total number of control-label pairs.",
+      "type": "number"
+    },
+    "vascularCrushing": {
+      "_instruction": "Boolean indicating if Vascular Crushing is used.",
+      "type": "boolean"
+    }
+  }
+}
