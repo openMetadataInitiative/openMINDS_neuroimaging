@@ -1,31 +1,31 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/MRIScannerUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/MRI/MRIScannerUsage",
   "properties": {
     "dwellTime": {
-      "_instruction": "Enter the dewell time of this aquistion.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
+      ],
+      "_instruction": "Enter the dewell time of this aquistion."
     },
     "echoTime": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "_instruction": "Enter the echo times of this aquisition (TE).",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
+      ],
+      "_instruction": "Enter the echo times of this aquisition (TE).",
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
     },
     "fieldOfView": {
-      "type": "string",
-      "_instruction": "Enter the field of view of this image."
+      "_instruction": "Enter the field of view of this image.",
+      "type": "string"
     },
     "flipAngle": {
-      "_instruction": "Enter the flip angele of this MR image in degrees.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
+      ],
+      "_instruction": "Enter the flip angele of this MR image in degrees."
     },
     "mRAcquisitionType": {
       "_instruction": "Add the type of sequence readout (2D or 3D).",
@@ -33,27 +33,17 @@
         "https://openminds.ebrains.eu/controlledTerms/MRAcquisitionType"
       ]
     },
-    "nonlinearGradientCorrection": {
-      "type": "boolean",
-      "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?"
-    },
-    "pulseSequenceType": {
-      "_instruction": "Add the type pulse sequence used for this scan.",
-      "_linkedCategories": [
-        "MRIPulseSequenceType"
-      ]
-    },
     "mTState": {
-      "type": "boolean",
-      "_instruction": "Boolean stating whether the magnetization transfer pulse is applied."
+      "_instruction": "Boolean stating whether the magnetization transfer pulse is applied.",
+      "type": "boolean"
     },
-    "spoilingState": {
-      "type": "boolean",
-      "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization."
+    "nonlinearGradientCorrection": {
+      "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?",
+      "type": "boolean"
     },
     "parallelAcquisitionTechnique": {
-      "type": "string",
-      "_ instruction": "Enter the parallel acquisition technique sequance name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines."
+      "_ instruction": "Enter the parallel acquisition technique sequance name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
+      "type": "string"
     },
     "phaseEncodingDirection": {
       "_instruction": "Add the direction along which phase is modulated which may result in visible distortions.",
@@ -61,14 +51,18 @@
         "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
       ]
     },
+    "spoilingState": {
+      "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization.",
+      "type": "boolean"
+    },
     "voxelSize": {
-      "type": "array",
-      "maxItems": 3,
-      "minItems": 3,
       "_instruction": "Enter voxel size this image.",
       "items": {
         "type": "number"
-      }
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
     }
   }
 }
