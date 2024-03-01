@@ -39,13 +39,9 @@
     },
     "pulseSequenceType": {
       "_instruction": "Add the type pulse sequence used for this scan.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/PulseSequenceType"
+      "_linkedCategories": [
+        "MRIPulseSequenceType"
       ]
-    },
-    "sequenceName": {
-      "type": "string",
-      "_instruction": "Enter the sequance name for this scan."
     },
     "mTState": {
       "type": "boolean",
