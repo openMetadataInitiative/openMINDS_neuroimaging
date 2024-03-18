@@ -1,7 +1,6 @@
 {
   "_extends": "/MRI/MRIAcquisition",
   "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRIAcquisition",
-  "required": [],
   "properties": {
     "acquisitionDuration": {
       "_embeddedTypes": [
