@@ -29,19 +29,10 @@
       ],
       "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition."
     },
-    "echoTime": {
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the echo times of this aquisition (TE).",
-      "minItems": 1,
-      "type": "array",
-      "uniqueItems": true
-    },
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/B0FieldMap"
+        "https://openminds.ebrains.eu/MRI/B0FieldMapAcquisition"
       ]
     },
     "numberOfVolumesDiscardedByScanner": {
@@ -61,19 +52,13 @@
     "sbref": {
       "_instruction": "Add the single-band reference image for this volume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
+        "https://openminds.ebrains.eu/MRI/image"
       ]
     },
     "structuralMRI": {
       "_instruction": "Add the structural MRI relavent for this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/StructuralMRI"
-      ]
-    },
-    "task": {
-      "_instruction": "Add the tasks used for this aquisition.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/Task"
+        "https://openminds.ebrains.eu/MRI/StructuralMRIAcquisition"
       ]
     },
     "volumeTiming": {
