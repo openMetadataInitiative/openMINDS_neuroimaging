@@ -9,7 +9,7 @@
             "type": "string"
         },
         "coordinateSpace": {
-            "_instruction": "Add the coordinate space in which this image exists in.",
+            "_instruction": "Add the coordinate space in which this image exists.",
             "_linkedTypes": [
                 "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
                 "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
@@ -24,9 +24,9 @@
         },
         "dimention": {
             "_instruction": "Enter the dimentions of this image.",
-            "items": {
-                "type": "number"
-            },
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
             "minItems": 2,
             "type": "array"
         },
@@ -39,7 +39,7 @@
             "type": "string"
         },
         "numberOfDimentin": {
-            "_instruction": "Enter number of dimentions in this image. (e.g. for 2D images 2, 3D images 3, 4D image (3Dvoulumes in time) 4).",
+            "_instruction": "Enter the number of dimensions in this image. (e.g. for 2D images, enter 2; for 3D images, enter 3; for 4D images (3D volumes in time), enter 4).",
             "type": "integer"
         },
         "recordedWith": {
@@ -49,20 +49,11 @@
             ]
         },
         "resolution": {
-            "_instruction": "Enter the resultion of this image.",
+            "_instruction": "Enter the resultion of this image, in this order (x,y,z,t).",
             "items": {
                 "type": "number"
             },
             "minItems": 2,
-            "type": "array"
-        },
-        "unit": {
-            "_instruction": "Add the  unit of this image, in the same order",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
-            ],
-            "minItems": 2,
-            "note": "we can make dimention quantitive value array then we don't need this",
             "type": "array"
         }
     }
