@@ -1,0 +1,69 @@
+{
+    "_type": "https://openminds.ebrains.eu/MRI/image",
+    "required": [
+        "dataLocation"
+    ],
+    "properties": {
+        "additionalRemarks": {
+            "_instruction": "Enter any additional remarks concerning this image.",
+            "type": "string"
+        },
+        "coordinateSpace": {
+            "_instruction": "Add the coordinate space in which this image exists in.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
+                "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+            ]
+        },
+        "dataLocation": {
+            "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/File",
+                "https://openminds.ebrains.eu/core/FileBundle"
+            ]
+        },
+        "dimention": {
+            "_instruction": "Enter the dimentions of this image.",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 2,
+            "type": "array"
+        },
+        "internalIdentifier": {
+            "_instruction": "Enter the identifier (or label) of this image that is used within the corresponding data files to identify this image.",
+            "type": "string"
+        },
+        "name": {
+            "_instruction": "Enter a descriptive name for this image.",
+            "type": "string"
+        },
+        "numberOfDimentin": {
+            "_instruction": "Enter number of dimentions in this image. (e.g. for 2D images 2, 3D images 3, 4D image (3Dvoulumes in time) 4).",
+            "type": "integer"
+        },
+        "recordedWith": {
+            "_instruction": "Add the device used to generate this image.",
+            "_linkedCategories": [
+                "deviceUsage"
+            ]
+        },
+        "resolution": {
+            "_instruction": "Enter the resultion of this image.",
+            "items": {
+                "type": "number"
+            },
+            "minItems": 2,
+            "type": "array"
+        },
+        "unit": {
+            "_instruction": "Add the  unit of this image, in the same order",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
+            ],
+            "minItems": 2,
+            "note": "we can make dimention quantitive value array then we don't need this",
+            "type": "array"
+        }
+    }
+}
