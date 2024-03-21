@@ -20,12 +20,6 @@
         "https://openminds.ebrains.eu/MRI/MRIScannerUsage"
       ]
     },
-    "flipAngle": {
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the flip angle of this scan (preferred units are degrees)."
-    },
     "input": {
       "_instruction": "Add the state of the subject or tissue sample before this session.",
       "_linkedTypes": [

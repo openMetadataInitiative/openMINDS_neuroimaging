@@ -1,21 +1,8 @@
 {
-    "_type": "https://openminds.ebrains.eu/MRI/Nifti",
+    "_type": "https://openminds.ebrains.eu/MRI/image",
     "required": [],
     "properties": {
-        "affineTransformation": {
-            "_instruction": "Enter the affine transformation map; corresponds to srow_x, srow_y, srow_z",
-            "items": {
-                "items": {
-                    "type": "number"
-                },
-                "maxItems": 3,
-                "minItems": 3,
-                "type": "array"
-            },
-            "maxItems": 3,
-            "minItems": 3,
-            "type": "array"
-        },
+        "condrinateSpace": {},
         "dataLocation": {
             "_instruction": "Add the location of the file or file bundle in which the image is stored.",
             "_linkedTypes": [
@@ -65,24 +52,6 @@
         "numberOfDimentin": {
             "_instruction": "Enter number of dimentions in this NITFI file, corrisponds to first numbre in dim array of nifti file",
             "type": "integer"
-        },
-        "quaternion": {
-            "_instruction": "Enter the quaternion representaion of rotaion matrix in order of b,c,d; corresponds to quatern_b, quatern_c, quatern_d",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 3,
-            "minItems": 3,
-            "type": "array"
-        },
-        "quaternionShift": {
-            "_instruction": "Enter the quaternion shifts in order of x,y,z; corresponds to qoffset_x, qoffset_y, qoffset_z",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 3,
-            "minItems": 3,
-            "type": "array"
         },
         "spatialUnit": {
             "_instruction": "Add the spatial unit of this image, corresponds to first part of xyzt_units.",
