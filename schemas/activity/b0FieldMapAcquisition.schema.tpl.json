@@ -15,25 +15,14 @@
     "dataLocation": {
       "_instruction": "Add the location of the files in which the fieldmap image is stored.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
-      ],
-      "minItems": 1,
-      "type": "array",
-      "uniqueItems": true
-    },
-    "echoTime": {
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the echo times of this aquisition (TE).",
-      "minItems": 1,
-      "type": "array",
-      "uniqueItems": true
+        "https://openminds.ebrains.eu/core/File",
+        "https://openminds.ebrains.eu/core/FileBundle"
+      ]
     },
     "unit": {
       "_instruction": "Add the unit of thid fieldmap. The unit is mandatory for fieldmaps provided in final format (mostly extracted by GE machines directly).",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/FieldMapType"
+        "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
       ]
     }
   }
