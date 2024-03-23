@@ -4,19 +4,11 @@
   "required": [
     "fieldMapType"
   ],
-  "comment": "Maybe fieldMapData is a better name",
   "properties": {
-    "b0FieldMapType": {
+    "fieldMapType": {
       "_instruction": "Add the type of this B0 field map.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/controlledTerms/FieldMapType"
-      ]
-    },
-    "dataLocation": {
-      "_instruction": "Add the location of the files in which the fieldmap image is stored.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File",
-        "https://openminds.ebrains.eu/core/FileBundle"
       ]
     },
     "unit": {
