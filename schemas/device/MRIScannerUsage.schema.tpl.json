@@ -63,6 +63,19 @@
       "maxItems": 3,
       "minItems": 3,
       "type": "array"
+    },
+    "interSliceGap": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+      ],
+      "_instruction": "Enter the inter slice distance of this scan."
+    },
+    "sliceOrder": {
+      "_instruction": "Enter the time in which each slice have been aquired within each volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
     }
   }
 }
