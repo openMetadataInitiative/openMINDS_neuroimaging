@@ -19,11 +19,6 @@
       "_instruction": "Boolean specifying whether the background suppression have been used.",
       "type": "boolean"
     },
-    "bolusCutOffFlag": {
-      "_instruction": "Boolean indicating if a bolus cut-off technique is used.",
-      "comment": "only for PASL",
-      "type": "boolean"
-    },
     "labelingDistance": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
@@ -65,10 +60,6 @@
     "totalAcquiredPairs": {
       "_instruction": "Add the total number of control-label pairs.",
       "type": "number"
-    },
-    "vascularCrushing": {
-      "_instruction": "Boolean indicating if Vascular Crushing is used.",
-      "type": "boolean"
     }
   }
 }
