@@ -1,0 +1,26 @@
+{
+  "_extends": "/MRI/VisualMatrix",
+  "_type": "https://openminds.ebrains.eu/MRI/ImageSequance",
+  "required": [
+    "numberOfImages"
+  ],
+  "properties": {
+    "numberOfImages": {
+      "_instruction": "Enter the total number of images in this sequence.",
+      "type": "number"
+    },
+    "temporalResolution": {
+      "_instruction": "Enter the temporal resolution of this sequence.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "aquistionTime": {
+      "_instruction": "Enter the time in which each image have been aquierd (obligatory if temporalResolution not present)",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "type": "array"
+    }
+  }
+}

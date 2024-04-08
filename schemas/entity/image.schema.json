@@ -1,54 +1,20 @@
 {
-    "_type": "https://openminds.ebrains.eu/MRI/image",
-    "required": [
-        "dataLocation"
-    ],
+    "_extends": "/MRI/VisualMatrix",
+    "_type": "https://openminds.ebrains.eu/MRI/Image",
     "properties": {
-        "additionalRemarks": {
-            "_instruction": "Enter any additional remarks concerning this image.",
-            "type": "string"
-        },
-        "coordinateSpace": {
-            "_instruction": "Add the coordinate space in which this image exists.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
-                "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
-            ]
-        },
-        "dataLocation": {
-            "_instruction": "Add the location of the file or file bundle in which the image is stored.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/File"
-            ],
-            "minItems": 1,
-            "type": "array"
-        },
-        "resolution": {
-            "_instruction": "Enter the resolution of this image.",
+        "colorDepth": {
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
             ],
-            "minItems": 2,
-            "type": "array"
-        },
-        "name": {
-            "_instruction": "Enter a descriptive name for this image.",
-            "type": "string"
-        },
-        "imagedWith": {
-            "_instruction": "Add the device used to generate this image.",
-            "_linkedCategories": [
-                "deviceUsage"
-            ]
+            "_instruction": "Enter the number of bits used to represent the color of each pixel."
         },
         "dimension": {
-            "_instruction": "Enter the dimension of this image, in this order (x,y).",
-            "items": {
-                "type": "number"
-            },
-            "minItems": 2,
             "maxItems": 2,
-            "type": "array"
+            "minItems": 2
+        },
+        "resolution": {
+            "maxItems": 2,
+            "minItems": 2
         }
     }
 }

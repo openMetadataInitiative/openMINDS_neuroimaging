@@ -1,0 +1,40 @@
+{
+  "_extends": "/MRI/visualMatrix",
+  "_type": "https://openminds.ebrains.eu/MRI/Volume",
+  "properties": {
+    "coordinateSpace": {
+      "_instruction": "Add the coordinate space in which this volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
+        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+      ]
+    },
+    "dimension": {
+      "_instruction": "Enter the dimension of the first volume in this sequence.",
+      "maxItems": 3,
+      "minItems": 3
+    },
+    "resolution": {
+      "_instruction": "Enter the resolution of the first volume in this sequence.",
+      "maxItems": 3,
+      "minItems": 3
+    },
+    "numberOfVolumes": {
+      "_instruction": "Enter the total number of volumes in this sequence.",
+      "type": "number"
+    },
+    "temporalResolution": {
+      "_instruction": "Enter the temporal resolution of this sequence.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ]
+    },
+    "aquistionTime": {
+      "_instruction": "Enter the time in which each volume have been aquierd (obligatory if temporalResolution not present)",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "type": "array"
+    }
+  }
+}
