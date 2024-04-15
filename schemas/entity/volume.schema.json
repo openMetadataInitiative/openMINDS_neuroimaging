@@ -1,19 +1,51 @@
 {
-  "_extends": "/MRI/visualMatrix",
   "_type": "https://openminds.ebrains.eu/MRI/Volume",
+  "required": [
+    "dataLocation"
+  ],
   "properties": {
     "coordinateSpace": {
-      "_instruction": "Add the coordinate space in which this volume.",
+      "_instruction": "Add the coordinate space in which this volume exists.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
         "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
       ]
     },
-    "dimension": {
+    "additionalRemarks": {
+      "_instruction": "Enter any additional remarks concerning this volume.",
+      "type": "string"
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the volume is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "resolution": {
+      "_instruction": "Enter the resolution of this volume.",
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "type": "array",
       "maxItems": 3,
       "minItems": 3
     },
-    "resolution": {
+    "name": {
+      "_instruction": "Enter a descriptive name for this volume.",
+      "type": "string"
+    },
+    "capturedWith": {
+      "_instruction": "Add the device used to captured this volume.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "dimension": {
+      "_instruction": "Enter the dimension of this volume.",
+      "items": {
+        "type": "number"
+      },
+      "type": "array",
       "maxItems": 3,
       "minItems": 3
     }

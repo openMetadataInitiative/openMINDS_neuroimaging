@@ -1,20 +1,52 @@
 {
-    "_extends": "/MRI/VisualMatrix",
     "_type": "https://openminds.ebrains.eu/MRI/Image",
+    "required": [
+        "dataLocation"
+    ],
     "properties": {
+        "additionalRemarks": {
+            "_instruction": "Enter any additional remarks concerning this image.",
+            "type": "string"
+        },
+        "dataLocation": {
+            "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+            "_linkedTypes": [
+                "https://openminds.ebrains.eu/core/File"
+            ]
+        },
+        "resolution": {
+            "_instruction": "Enter the resolution of this image.",
+            "_embeddedTypes": [
+                "https://openminds.ebrains.eu/core/QuantitativeValue"
+            ],
+            "type": "array",
+            "maxItems": 2,
+            "minItems": 2
+        },
+        "name": {
+            "_instruction": "Enter a descriptive name for this image.",
+            "type": "string"
+        },
+        "capturedWith": {
+            "_instruction": "Add the device used to captured this image.",
+            "_linkedCategories": [
+                "deviceUsage"
+            ]
+        },
+        "dimension": {
+            "_instruction": "Enter the dimension of this image.",
+            "items": {
+                "type": "number"
+            },
+            "type": "array",
+            "maxItems": 2,
+            "minItems": 2
+        },
         "colorDepth": {
             "_embeddedTypes": [
                 "https://openminds.ebrains.eu/core/QuantitativeValue"
             ],
             "_instruction": "Enter the number of bits used to represent the color of each pixel."
-        },
-        "dimension": {
-            "maxItems": 2,
-            "minItems": 2
-        },
-        "resolution": {
-            "maxItems": 2,
-            "minItems": 2
         }
     }
 }

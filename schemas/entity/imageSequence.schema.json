@@ -6,21 +6,20 @@
   ],
   "properties": {
     "numberOfImages": {
-      "_instruction": "Enter the total number of images in this sequence (at leaste two).",
-      "type": "number"
+      "type": "integer",
+      "minimum": 2,
+      "_instruction": "Enter the total number of images in this sequence (at least two)."
     },
     "temporalResolution": {
-      "_instruction": "Enter the temporal resolution of this sequence.",
+      "_instruction": "Enter the temporal resolution of this sequence, indicating the range for irregularly sampled image sequences.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
     },
-    "aquistionTimeStamp": {
-      "_instruction": "Enter the time in which each image have been aquierd (obligatory if temporalResolution not present)",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "type": "array"
+    "samplingType": {
+      "_instruction": "Is the image sequence sampled regularly in time?",
+      "type": "boolean"
     }
   }
 }

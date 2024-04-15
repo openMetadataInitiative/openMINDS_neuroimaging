@@ -1,40 +1,22 @@
 {
-  "_extends": "/MRI/visualMatrix",
-  "_type": "https://openminds.ebrains.eu/MRI/Volume",
+  "_extends": "/MRI/Volume",
+  "_type": "https://openminds.ebrains.eu/MRI/VolumeSequence",
   "properties": {
-    "coordinateSpace": {
-      "_instruction": "Add the coordinate space in which this volume.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
-        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
-      ]
-    },
-    "dimension": {
-      "_instruction": "Enter the dimension of the first volume in this sequence.",
-      "maxItems": 3,
-      "minItems": 3
-    },
-    "resolution": {
-      "_instruction": "Enter the resolution of the first volume in this sequence.",
-      "maxItems": 3,
-      "minItems": 3
-    },
     "numberOfVolumes": {
-      "_instruction": "Enter the total number of volumes in this sequence.",
-      "type": "number"
+      "type": "integer",
+      "minimum": 2,
+      "_instruction": "Enter the total number of volumes in this volume sequence (at least two)."
     },
     "temporalResolution": {
-      "_instruction": "Enter the temporal resolution of this sequence.",
+      "_instruction": "Enter the temporal resolution of this sequence, indicating the range for irregularly sampled image sequences.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
       ]
     },
-    "aquistionTime": {
-      "_instruction": "Enter the time in which each volume have been aquierd (obligatory if temporalResolution not present)",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "type": "array"
+    "samplingType": {
+      "_instruction": "Is the image sequence sampled regularly in time?",
+      "type": "boolean"
     }
   }
 }
