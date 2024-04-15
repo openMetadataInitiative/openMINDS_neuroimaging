@@ -25,7 +25,7 @@
     },
     "numberOfSlices": {
       "_instruction": "Enter number of slices in this MR image.",
-      "type": "number"
+      "type": "integer"
     },
     "sliceTiming": {
       "_instruction": "Enter the time in which each slice have been aquired within each volume.",
