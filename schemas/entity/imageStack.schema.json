@@ -1,33 +1,20 @@
 {
   "_extends": "/MRI/Image",
   "_type": "https://openminds.ebrains.eu/MRI/ImageStack",
-  "required": [
-    "numberOfImages"
-  ],
   "properties": {
     "numberOfImages": {
-      "type": "integer",
+      "_instruction": "Enter the total number of images in this stack (at least two).",
       "minimum": 2,
-      "_instruction": "Enter the total number of images in this stack (at least two)."
-    },
-    "order": {
-      "_instruction": "Enter arrangement or sequence of images within the stack.",
-      "items": {
-        "type": "number"
-      },
-      "type": "array"
+      "type": "integer"
     },
     "sliceThickness": {
-      "_instruction": "Enter the thickness of each image slice in the stack.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
-    },
-    "alignment": {
-      "_instruction": "Add the axes orientation in witch the images are stacked in space.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/AnatomicalAxesOrientation"
-      ]
+      ],
+      "_instruction": "Enter the thickness of each image slice in the stack."
     }
-  }
+  },
+  "required": [
+    "numberOfImages"
+  ]
 }

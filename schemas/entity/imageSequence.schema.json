@@ -11,15 +11,10 @@
       "_instruction": "Enter the total number of images in this sequence (at least two)."
     },
     "temporalResolution": {
-      "_instruction": "Enter the temporal resolution of this sequence, indicating the range for irregularly sampled image sequences.",
+      "_instruction": "Enter the temporal resolution of this sequence.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
       ]
-    },
-    "samplingType": {
-      "_instruction": "Is the image sequence sampled regularly in time?",
-      "type": "boolean"
     }
   }
 }
