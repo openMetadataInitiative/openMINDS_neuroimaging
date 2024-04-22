@@ -1,20 +1,20 @@
 {
   "_extends": "/MRI/Image",
   "_type": "https://openminds.ebrains.eu/MRI/ImageSequence",
-  "required": [
-    "numberOfImages"
-  ],
   "properties": {
     "numberOfImages": {
-      "type": "integer",
+      "_instruction": "Enter the total number of images in this sequence (at least two).",
       "minimum": 2,
-      "_instruction": "Enter the total number of images in this sequence (at least two)."
+      "type": "integer"
     },
     "temporalResolution": {
-      "_instruction": "Enter the temporal resolution of this sequence.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
+      ],
+      "_instruction": "Enter the temporal resolution of this sequence."
     }
-  }
+  },
+  "required": [
+    "numberOfImages"
+  ]
 }

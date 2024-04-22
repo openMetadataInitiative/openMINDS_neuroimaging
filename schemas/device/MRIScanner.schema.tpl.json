@@ -1,16 +1,16 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/MRIScanner",
   "_extends": "/core/schemas/products/device.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/MRI/MRIScanner",
   "properties": {
     "magneticFieldStrength": {
-      "_instruction": "Enter the nominal field strength of MR magnet in Tesla.",
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ]
+      ],
+      "_instruction": "Enter the nominal field strength of MR magnet in Tesla."
     },
     "receiveCoilName": {
-      "type": "string",
-      "_instruction": "Enter information describing the receiver coil."
+      "_instruction": "Enter information describing the receiver coil.",
+      "type": "string"
     }
   }
 }

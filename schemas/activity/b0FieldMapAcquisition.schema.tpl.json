@@ -1,9 +1,6 @@
 {
   "_extends": "/MRI/MRIAcquisition",
   "_type": "https://openminds.ebrains.eu/MRI/B0FieldMapAcquisition",
-  "required": [
-    "fieldMapType"
-  ],
   "properties": {
     "fieldMapType": {
       "_instruction": "Add the type of this B0 field map.",
@@ -17,5 +14,8 @@
         "https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement"
       ]
     }
-  }
+  },
+  "required": [
+    "fieldMapType"
+  ]
 }

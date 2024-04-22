@@ -1,37 +1,8 @@
 {
   "_type": "https://openminds.ebrains.eu/MRI/Volume",
-  "required": [
-    "dataLocation"
-  ],
   "properties": {
-    "coordinateSpace": {
-      "_instruction": "Add the coordinate space in which this volume exists.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
-        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
-      ]
-    },
     "additionalRemarks": {
       "_instruction": "Enter any additional remarks concerning this volume.",
-      "type": "string"
-    },
-    "dataLocation": {
-      "_instruction": "Add the location of the file or file bundle in which the volume is stored.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
-      ]
-    },
-    "resolution": {
-      "_instruction": "Enter the resolution of this volume.",
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "type": "array",
-      "maxItems": 3,
-      "minItems": 3
-    },
-    "name": {
-      "_instruction": "Enter a descriptive name for this volume.",
       "type": "string"
     },
     "capturedWith": {
@@ -40,14 +11,43 @@
         "deviceUsage"
       ]
     },
+    "coordinateSpace": {
+      "_instruction": "Add the coordinate space in which this volume exists.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
+        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+      ]
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the volume is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
     "dimension": {
       "_instruction": "Enter the dimension of this volume.",
       "items": {
         "type": "number"
       },
-      "type": "array",
       "maxItems": 3,
-      "minItems": 3
+      "minItems": 3,
+      "type": "array"
+    },
+    "name": {
+      "_instruction": "Enter a descriptive name for this volume.",
+      "type": "string"
+    },
+    "resolution": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the resolution of this volume.",
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
     }
-  }
+  },
+  "required": [
+    "dataLocation"
+  ]
 }

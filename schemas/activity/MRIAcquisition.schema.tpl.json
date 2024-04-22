@@ -1,8 +1,5 @@
 {
   "_extends": "/core/schemas/research/ExperimentalActivity.schema.tpl.json",
-  "required": [
-    "device"
-  ],
   "properties": {
     "contrastAgent": {
       "_instruction": "Add the contrast agent used for this scan.",
@@ -41,5 +38,8 @@
       "minItems": 1,
       "type": "array"
     }
-  }
+  },
+  "required": [
+    "device"
+  ]
 }

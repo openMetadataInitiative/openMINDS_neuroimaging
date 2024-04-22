@@ -1,10 +1,6 @@
 {
   "_extends": "/MRI/MRIAcquisition",
   "_type": "https://openminds.ebrains.eu/MRI/DiffusionMRIAcquisition",
-  "required": [
-    "bValues",
-    "bVectors"
-  ],
   "properties": {
     "bValues": {
       "_instruction": "Enter all the b values of this aquisition in the order they are present in the b vector and data file.",
@@ -38,5 +34,9 @@
         "https://openminds.ebrains.eu/MRI/StructuralMRI"
       ]
     }
-  }
+  },
+  "required": [
+    "bValues",
+    "bVectors"
+  ]
 }
