@@ -52,7 +52,8 @@
     "sbref": {
       "_instruction": "Add the single-band reference image for this volume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/image"
+        "https://openminds.ebrains.eu/MRI/Volume",
+        "https://openminds.ebrains.eu/core/File"
       ]
     },
     "structuralMRI": {
@@ -67,5 +68,8 @@
         "https://openminds.ebrains.eu/core/QuantitativeValueArray"
       ]
     }
-  }
+  },
+  "required": [
+    "repetitionTime"
+  ]
 }
