@@ -13,5 +13,8 @@
       ],
       "_instruction": "Enter the temporal resolution of this sequence."
     }
-  }
+  },
+  "required": [
+    "numberOfVolumes"
+  ]
 }
