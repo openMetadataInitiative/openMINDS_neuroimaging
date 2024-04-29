@@ -53,6 +53,9 @@
     }
   },
   "required": [
-    "dataLocation"
+    "dataLocation",
+    "pixelSize",
+    "dimension",
+    "coordinateSpace"
   ]
 }

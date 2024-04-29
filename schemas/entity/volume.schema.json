@@ -27,27 +27,30 @@
     "dimension": {
       "_instruction": "Enter the dimension of this volume.",
       "items": {
-        "type": "number"
+        "type": "integer"
       },
       "maxItems": 3,
       "minItems": 3,
       "type": "array"
     },
-    "name": {
-      "_instruction": "Enter a descriptive name for this volume.",
+    "lookupLabel": {
+      "_instruction": "Enter a lookup label for this volume that may help you to find this instance more easily.",
       "type": "string"
     },
-    "resolution": {
+    "voxelSize": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
       ],
-      "_instruction": "Enter the resolution of this volume.",
+      "_instruction": "Enter the physical voxel size for this image (in x,y,z order).",
       "maxItems": 3,
       "minItems": 3,
       "type": "array"
     }
   },
   "required": [
-    "dataLocation"
+    "dataLocation",
+    "voxelSize",
+    "dimension",
+    "coordinateSpace"
   ]
 }
