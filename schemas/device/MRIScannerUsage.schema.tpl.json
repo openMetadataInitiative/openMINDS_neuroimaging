@@ -18,8 +18,10 @@
       "uniqueItems": true
     },
     "fieldOfView": {
-      "_instruction": "Enter the field of view of this image.",
-      "type": "string"
+      "_instruction": "Add the field of view of this image.",
+      "_linkedCategories": [
+        "mathematicalShapes"
+      ]    
     },
     "flipAngle": {
       "_embeddedTypes": [
