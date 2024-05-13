@@ -21,7 +21,7 @@
       "_instruction": "Add the field of view of this image.",
       "_linkedCategories": [
         "mathematicalShapes"
-      ]    
+      ]
     },
     "flipAngle": {
       "_embeddedTypes": [
@@ -49,6 +49,10 @@
     "nonlinearGradientCorrection": {
       "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?",
       "type": "boolean"
+    },
+    "numberOfVolumesDiscardedByScanner": {
+      "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
+      "type": "number"
     },
     "parallelAcquisitionTechnique": {
       "_ instruction": "Enter the parallel acquisition technique sequance name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",

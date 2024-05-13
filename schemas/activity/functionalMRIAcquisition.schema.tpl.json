@@ -32,12 +32,10 @@
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/B0FieldMapAcquisition"
-      ]
-    },
-    "numberOfVolumesDiscardedByScanner": {
-      "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
-      "type": "number"
+        "https://openminds.ebrains.eu/core/File"
+      ],
+      "minItems": 1,
+      "type": "array"
     },
     "numberOfVolumesDiscardedByUser": {
       "_instruction": "Enter number of volumes discarded by user before the first volume.",
