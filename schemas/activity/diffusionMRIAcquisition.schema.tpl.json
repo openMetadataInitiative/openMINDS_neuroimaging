@@ -23,14 +23,13 @@
     "singleBandReferenceImage": {
       "_instruction": "Add the single-band reference image for this volume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/Volume",
         "https://openminds.ebrains.eu/core/File"
       ]
     },
     "structuralMRI": {
       "_instruction": "Add the structural MRI relavent for this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/StructuralMRIAcquisition"
+        "https://openminds.ebrains.eu/core/File"
       ]
     }
   },
