@@ -52,6 +52,7 @@
     "postLabelingDelay": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue",
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
       ],
       "_instruction": "Add the postlabeling delay (PLD) time, in seconds, after the end of the labeling (for 'CASL' or 'PCASL') or middle of the labeling pulse (for 'PASL') until the middle of the excitation pulse applied to the imaging slab (for 3D acquisition) or first slice."
     },
