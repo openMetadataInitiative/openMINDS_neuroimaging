@@ -1,4 +1,4 @@
 {
-  "_extends": "/MRI/MRIAcquisition",
-  "_type": "https://openminds.ebrains.eu/MRI/StructuralMRIAcquisition"
+  "_extends": "/neuroimaging/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/StructuralMRIAcquisition"
 }

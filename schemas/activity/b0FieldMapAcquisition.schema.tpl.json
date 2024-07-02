@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/MRIAcquisition",
-  "_type": "https://openminds.ebrains.eu/MRI/B0FieldMapAcquisition",
+  "_extends": "/neuroimaging/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/B0FieldMapAcquisition",
   "properties": {
     "fieldMapType": {
       "_instruction": "Add the type of this B0 field map.",

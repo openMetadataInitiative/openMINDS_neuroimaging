@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/Image",
-  "_type": "https://openminds.ebrains.eu/MRI/ImageStack",
+  "_extends": "/neuroimaging/Image",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/ImageStack",
   "properties": {
     "numberOfImages": {
       "_instruction": "Enter the total number of images in this stack (at least two).",

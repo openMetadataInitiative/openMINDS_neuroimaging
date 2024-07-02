@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/MRIAcquisition",
-  "_type": "https://openminds.ebrains.eu/MRI/ArterialSpinLabelingAcquisition",
+  "_extends": "/neuroimaging/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/ArterialSpinLabelingAcquisition",
   "properties": {
     "arterialSpinLabelingType": {
       "_instruction": "Add the type of this arterial spin labeling MR image.",

@@ -1,6 +1,6 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/MRI/MRIScannerUsage",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsage",
   "properties": {
     "dwellTime": {
       "_embeddedTypes": [

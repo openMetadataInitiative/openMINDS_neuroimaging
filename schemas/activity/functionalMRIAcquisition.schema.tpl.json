@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/MRIAcquisition",
-  "_type": "https://openminds.ebrains.eu/MRI/FunctionalMRIAcquisition",
+  "_extends": "/neuroimaging/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/FunctionalMRIAcquisition",
   "properties": {
     "acquisitionDuration": {
       "_embeddedTypes": [

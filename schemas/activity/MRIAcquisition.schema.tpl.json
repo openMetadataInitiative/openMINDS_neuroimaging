@@ -10,7 +10,7 @@
     "device": {
       "_instruction": "Add the MRI machine setting used for this scan.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/MRIScannerUsage"
+        "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsage"
       ]
     },
     "input": {

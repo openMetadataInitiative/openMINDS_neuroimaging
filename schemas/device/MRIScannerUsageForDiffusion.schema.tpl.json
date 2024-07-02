@@ -1,6 +1,6 @@
 {
-    "_extends": "/MRI/MRIScannerUsage.schema.tpl.json",
-    "_type": "https://openminds.ebrains.eu/MRI/MRIScannerUsageForDiffusion",
+    "_extends": "/neuroimaging/MRIScannerUsage.schema.tpl.json",
+    "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsageForDiffusion",
     "properties": {
         "bValues": {
             "_instruction": "Add the b values coresponding to this aquisition.",

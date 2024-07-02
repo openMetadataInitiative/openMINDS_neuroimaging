@@ -1,6 +1,6 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/MRI/MRIScanner",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScanner",
   "properties": {
     "magneticFieldStrength": {
       "_embeddedTypes": [

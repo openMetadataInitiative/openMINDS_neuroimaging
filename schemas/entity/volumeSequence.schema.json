@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/Volume",
-  "_type": "https://openminds.ebrains.eu/MRI/VolumeSequence",
+  "_extends": "/neuroimaging/Volume",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/VolumeSequence",
   "properties": {
     "numberOfVolumes": {
       "_instruction": "Enter the total number of volumes in this volume sequence (at least two).",

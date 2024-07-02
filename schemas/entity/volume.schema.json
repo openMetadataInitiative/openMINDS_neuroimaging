@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/Volume",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/Volume",
   "properties": {
     "additionalRemarks": {
       "_instruction": "Enter any additional remarks concerning this volume.",

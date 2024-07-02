@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/MRIAcquisition",
-  "_type": "https://openminds.ebrains.eu/MRI/DiffusionMRIAcquisition",
+  "_extends": "/neuroimaging/MRIAcquisition",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/DiffusionMRIAcquisition",
   "properties": {
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",

@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/MRI/Image",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/Image",
   "properties": {
     "additionalRemarks": {
       "_instruction": "Enter any additional remarks concerning this image.",

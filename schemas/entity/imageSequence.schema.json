@@ -1,6 +1,6 @@
 {
-  "_extends": "/MRI/Image",
-  "_type": "https://openminds.ebrains.eu/MRI/ImageSequence",
+  "_extends": "/neuroimaging/Image",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/ImageSequence",
   "properties": {
     "numberOfImages": {
       "_instruction": "Enter the total number of images in this sequence (at least two).",
