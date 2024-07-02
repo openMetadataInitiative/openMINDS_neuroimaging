@@ -1,22 +1,22 @@
 {
-    "_extends": "/neuroimaging/MRIScannerUsage.schema.tpl.json",
-    "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsageForDiffusion",
-    "properties": {
-        "bValues": {
-            "_instruction": "Add the b values coresponding to this aquisition.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/File"
-            ]
-        },
-        "bVectors": {
-            "_instruction": "Add the b vectors coresponding to this aquisition.",
-            "_linkedTypes": [
-                "https://openminds.ebrains.eu/core/File"
-            ]
-        }
+  "_extends": "/neuroimaging/MRIScannerUsage.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsageForDiffusion",
+  "properties": {
+    "bValues": {
+      "_instruction": "Add the b values coresponding to this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
     },
-    "required": [
-        "bValues",
-        "bVectors"
-    ]
+    "bVectors": {
+      "_instruction": "Add the b vectors coresponding to this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    }
+  },
+  "required": [
+    "bValues",
+    "bVectors"
+  ]
 }
