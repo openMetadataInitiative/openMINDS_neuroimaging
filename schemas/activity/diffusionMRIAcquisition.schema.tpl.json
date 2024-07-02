@@ -2,22 +2,10 @@
   "_extends": "/MRI/MRIAcquisition",
   "_type": "https://openminds.ebrains.eu/MRI/DiffusionMRIAcquisition",
   "properties": {
-    "bValues": {
-      "_instruction": "Add the b values coresponding to this aquisition.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
-      ]
-    },
-    "bVectors": {
-      "_instruction": "Add the b vectors coresponding to this aquisition.",
-      "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
-      ]
-    },
     "fieldMap": {
       "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/MRI/B0FieldMapAcquisition"
+        "https://openminds.ebrains.eu/core/File"
       ]
     },
     "singleBandReferenceImage": {
@@ -27,14 +15,10 @@
       ]
     },
     "structuralMRI": {
-      "_instruction": "Add the structural MRI relavent for this aquisition.",
+      "_instruction": "Add the structural MRI relevant for this acquisition.",
       "_linkedTypes": [
         "https://openminds.ebrains.eu/core/File"
       ]
     }
-  },
-  "required": [
-    "bValues",
-    "bVectors"
-  ]
+  }
 }
