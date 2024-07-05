@@ -37,6 +37,10 @@
       "_instruction": "Enter a lookup label for this volume that may help you to find this instance more easily.",
       "type": "string"
     },
+    "numberOfSlices": {
+      "_instruction": "Enter number of slices in this volume.",
+      "type": "integer"
+    },
     "voxelSize": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
