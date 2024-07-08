@@ -20,6 +20,12 @@
         "https://openminds.ebrains.eu/core/TissueSampleState"
       ]
     },
+    "subjectOrientation": {
+      "_instruction": "Add the anatomical orientation of the subject in the scanner.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/controlledTerms/anatomicalOrientation"
+      ]
+    },
     "targetAnatomicalLocation": {
       "_instruction": "Add the all the target anatomical location in this scan",
       "_linkedTypes": [
