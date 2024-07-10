@@ -1,5 +1,5 @@
 {
-  "_extends": "/neuroimaging/Image",
+  "_extends": "neuroimaging/image.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/ImageStack",
   "properties": {
     "numberOfImages": {

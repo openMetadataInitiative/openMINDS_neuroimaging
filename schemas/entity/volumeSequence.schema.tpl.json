@@ -1,5 +1,5 @@
 {
-  "_extends": "/neuroimaging/Volume",
+  "_extends": "neuroimaging/volume.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/VolumeSequence",
   "properties": {
     "numberOfVolumes": {
