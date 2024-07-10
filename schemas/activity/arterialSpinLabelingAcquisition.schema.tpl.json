@@ -1,5 +1,5 @@
 {
-  "_extends": "/neuroimaging/MRIAcquisition",
+  "_extends": "neuroimaging/activity/MRIAcquisition.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/ArterialSpinLabelingAcquisition",
   "properties": {
     "arterialSpinLabelingType": {

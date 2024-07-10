@@ -1,5 +1,5 @@
 {
-  "_extends": "neuroimaging/MRIScannerUsage.schema.tpl.json",
+  "_extends": "neuroimaging/device/MRIScannerUsage.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsageForDiffusion",
   "properties": {
     "bValues": {
