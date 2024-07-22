@@ -2,6 +2,18 @@
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsage",
   "properties": {
+    "bValues": {
+      "_instruction": "Add the b values coresponding to this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "bVectors": {
+      "_instruction": "Add the b vectors coresponding to this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
     "dwellTime": {
       "_embeddedTypes": [
         "https://openminds.ebrains.eu/core/QuantitativeValue"
