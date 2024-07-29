@@ -1,0 +1,69 @@
+{
+  "_extends": "activity/MRIAcquisition.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/FunctionalMRIAcquisition",
+  "properties": {
+    "acquisitionDuration": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter duration of volume acquisition."
+    },
+    "behavioralProtocol": {
+      "_instruction": "Add all behavioral protocols that were performed during this session.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/BehavioralProtocol"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "delayAfterTrigger": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum)."
+    },
+    "delayTime": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition."
+    },
+    "fieldMap": {
+      "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ],
+      "minItems": 1,
+      "type": "array"
+    },
+    "numberOfVolumesDiscardedByUser": {
+      "_instruction": "Enter number of volumes discarded by user before the first volume.",
+      "type": "number"
+    },
+    "repetitionTime": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the echo time of this aquisition (TR)."
+    },
+    "sbref": {
+      "_instruction": "Add the single-band reference image for this volume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "structuralMRI": {
+      "_instruction": "Add the structural MRI relavent for this aquisition.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "volumeTiming": {
+      "_instruction": "Enter aquisition times of each vloume.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+      ]
+    }
+  }
+}

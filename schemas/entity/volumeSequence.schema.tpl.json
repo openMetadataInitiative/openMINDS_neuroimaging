@@ -1,0 +1,20 @@
+{
+  "_extends": "entity/volume.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/VolumeSequence",
+  "properties": {
+    "numberOfVolumes": {
+      "_instruction": "Enter the total number of volumes in this volume sequence (at least two).",
+      "minimum": 2,
+      "type": "integer"
+    },
+    "temporalResolution": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the temporal resolution of this sequence."
+    }
+  },
+  "required": [
+    "numberOfVolumes"
+  ]
+}
