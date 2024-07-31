@@ -41,12 +41,6 @@
       "_instruction": "Enter number of volumes discarded by user before the first volume.",
       "type": "number"
     },
-    "repetitionTime": {
-      "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
-      ],
-      "_instruction": "Enter the echo time of this aquisition (TR)."
-    },
     "sbref": {
       "_instruction": "Add the single-band reference image for this volume.",
       "_linkedTypes": [
