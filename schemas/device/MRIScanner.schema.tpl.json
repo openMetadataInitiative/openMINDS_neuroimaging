@@ -1,10 +1,10 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScanner",
+  "_type": "/neuroimaging/MRIScanner",
   "properties": {
     "magneticFieldStrength": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ],
       "_instruction": "Enter the nominal field strength of MR magnet in Tesla."
     }
