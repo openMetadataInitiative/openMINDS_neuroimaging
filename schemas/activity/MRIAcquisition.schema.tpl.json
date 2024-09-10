@@ -4,26 +4,26 @@
     "contrastAgent": {
       "_instruction": "Add the contrast agent used for this scan.",
       "_linkedTypes": [
-        "/chemicals/AmountOfChemical"
+        "AmountOfChemical"
       ]
     },
     "device": {
       "_instruction": "Add the MRI machine setting used for this scan.",
       "_linkedTypes": [
-        "/neuroimaging/MRIScannerUsage"
+        "MRIScannerUsage"
       ]
     },
     "input": {
       "_instruction": "Add the state of the subject or tissue sample before this session.",
       "_linkedTypes": [
-        "/core/SubjectState",
-        "/core/TissueSampleState"
+        "SubjectState",
+        "TissueSampleState"
       ]
     },
     "specimenOrientation": {
       "_instruction": "Add the anatomical orientation of the specimen in the scanner.",
       "_linkedTypes": [
-        "/controlledTerms/AnatomicalAxesOrientation"
+        "AnatomicalAxesOrientation"
       ]
     }
   },

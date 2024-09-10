@@ -1,6 +1,6 @@
 {
   "_extends": "entity/image.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/neuroimaging/ImageSequence",
+  "_type": "ImageSequence",
   "properties": {
     "numberOfImages": {
       "_instruction": "Enter the total number of images in this sequence (at least two).",
@@ -9,7 +9,7 @@
     },
     "temporalResolution": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "QuantitativeValue"
       ],
       "_instruction": "Enter the temporal resolution of this sequence."
     }
