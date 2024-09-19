@@ -1,0 +1,61 @@
+{
+  "_type": "https://openminds.ebrains.eu/neuroimaging/Image",
+  "properties": {
+    "additionalRemarks": {
+      "_instruction": "Enter any additional remarks concerning this image.",
+      "type": "string"
+    },
+    "capturedWith": {
+      "_instruction": "Add the device used to captured this image.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "colorDepth": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the number of bits used to represent the color of each pixel."
+    },
+    "coordinateSpace": {
+      "_instruction": "Add the coordinate space in which this image exists.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+      ]
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the image is stored.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/core/File"
+      ]
+    },
+    "dimension": {
+      "_instruction": "Enter the dimension of this image in pixels.",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "name": {
+      "_instruction": "Enter a descriptive name for this image.",
+      "type": "string"
+    },
+    "pixelSize": {
+      "_embeddedTypes": [
+        "https://openminds.ebrains.eu/core/QuantitativeValue"
+      ],
+      "_instruction": "Enter the physical pixel size for this image (in x,y order).",
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  },
+  "required": [
+    "dataLocation",
+    "pixelSize",
+    "dimension",
+    "coordinateSpace"
+  ]
+}

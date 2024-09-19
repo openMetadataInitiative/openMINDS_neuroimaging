@@ -1,0 +1,4 @@
+{
+  "_extends": "activity/MRIAcquisition.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/StructuralMRIAcquisition"
+}
