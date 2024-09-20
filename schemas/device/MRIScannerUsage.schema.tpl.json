@@ -1,0 +1,126 @@
+{
+  "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
+  "_type": "neuroimaging:MRIScannerUsage",
+  "properties": {
+    "bValues": {
+      "_instruction": "Add the b values coresponding to this aquisition.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+    },
+    "bVectors": {
+      "_instruction": "Add the b vectors coresponding to this aquisition.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+    },
+    "dwellTime": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the dewell time of this aquistion."
+    },
+    "echoTime": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the echo times of this aquisition (TE).",
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "fieldOfView": {
+      "_instruction": "Add the field of view of this image.",
+      "_linkedCategories": [
+        "mathematicalShapes"
+      ]
+    },
+    "flipAngle": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the flip angle of this scan (preferred units: degrees)."
+    },
+    "interSliceGap": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
+      ],
+      "_instruction": "Enter the inter slice distance of this scan."
+    },
+    "inversionTime": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the inversion time of this aquistion."
+    },
+    "mRAcquisitionType": {
+      "_instruction": "Add the type of sequence readout (2D or 3D).",
+      "_linkedTypes": [
+        "controlledTerms:MRAcquisitionType"
+      ]
+    },
+    "mTState": {
+      "_instruction": "Boolean stating whether the magnetization transfer pulse is applied.",
+      "type": "boolean"
+    },
+    "nonlinearGradientCorrection": {
+      "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?",
+      "type": "boolean"
+    },
+    "numberOfVolumesDiscardedByScanner": {
+      "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
+      "type": "number"
+    },
+    "parallelAcquisitionTechnique": {
+      "_ instruction": "Enter the parallel acquisition technique sequance name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
+      "type": "string"
+    },
+    "phaseEncodingDirection": {
+      "_instruction": "Add the direction along which phase is modulated which may result in visible distortions.",
+      "_linkedTypes": [
+        "controlledTerms:CartesianDirectionVector"
+      ]
+    },
+    "pulseSequenceType": {
+      "_instruction": "Add the type pulse sequence used for this scan.",
+      "_linkedTypes": [
+        "controlledTerms:MRIPulseSequence"
+      ]
+    },
+    "radiofrequencyCoilType": {
+      "_instruction": "Add the type of radiofrequency coil.",
+      "_linkedTypes": [
+        "controlledTerms:MRIRadiofrequencyCoilType"
+      ]
+    },
+    "repetitionTime": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the echo time of this aquisition (TR)."
+    },
+    "sliceOrder": {
+      "_instruction": "Enter the time in which each slice have been aquired within each volume.",
+      "_linkedTypes": [
+        "core:QuantitativeValueArray"
+      ]
+    },
+    "sliceTiming": {
+      "_instruction": "Enter the time in which each slice have been aquired within each volume.",
+      "_linkedTypes": [
+        "core:QuantitativeValueArray"
+      ]
+    },
+    "spoilingState": {
+      "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization.",
+      "type": "boolean"
+    },
+    "voxelSize": {
+      "_embeddedTypes": [
+        "core:QuantitativeValueArray"
+      ],
+      "_instruction": "Enter voxel size this image: in this order x,y,z."
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_extends": "/core/schemas/research/ExperimentalActivity.schema.tpl.json",
+  "properties": {
+    "contrastAgent": {
+      "_instruction": "Add the contrast agent used for this scan.",
+      "_linkedTypes": [
+        "chemicals:AmountOfChemical"
+      ]
+    },
+    "device": {
+      "_instruction": "Add the MRI machine setting used for this scan.",
+      "_linkedTypes": [
+        "neuroimaging:MRIScannerUsage"
+      ]
+    },
+    "input": {
+      "_instruction": "Add the state of the subject or tissue sample before this session.",
+      "_linkedTypes": [
+        "core:SubjectState",
+        "core:TissueSampleState"
+      ]
+    },
+    "specimenOrientation": {
+      "_instruction": "Add the anatomical orientation of the specimen in the scanner.",
+      "_linkedTypes": [
+        "controlledTerms:AnatomicalAxesOrientation"
+      ]
+    }
+  },
+  "required": [
+    "device"
+  ]
+}

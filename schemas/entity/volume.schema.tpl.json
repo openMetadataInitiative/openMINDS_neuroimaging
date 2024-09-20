@@ -1,0 +1,60 @@
+{
+  "_type": "neuroimaging:Volume",
+  "properties": {
+    "additionalRemarks": {
+      "_instruction": "Enter any additional remarks concerning this volume.",
+      "type": "string"
+    },
+    "capturedWith": {
+      "_instruction": "Add the device used to captured this volume.",
+      "_linkedCategories": [
+        "deviceUsage"
+      ]
+    },
+    "coordinateSpace": {
+      "_instruction": "Add the coordinate space in which this volume exists.",
+      "_linkedTypes": [
+        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
+        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+      ]
+    },
+    "dataLocation": {
+      "_instruction": "Add the location of the file or file bundle in which the volume is stored.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+    },
+    "dimension": {
+      "_instruction": "Enter the dimension of this volume.",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "lookupLabel": {
+      "_instruction": "Enter a lookup label for this volume that may help you to find this instance more easily.",
+      "type": "string"
+    },
+    "numberOfSlices": {
+      "_instruction": "Enter number of slices in this volume.",
+      "type": "integer"
+    },
+    "voxelSize": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the physical voxel size for this image (in x,y,z order).",
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "dataLocation",
+    "voxelSize",
+    "dimension",
+    "coordinateSpace"
+  ]
+}
