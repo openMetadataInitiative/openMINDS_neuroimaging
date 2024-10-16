@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/neuroimaging/Volume",
+  "_type": "neuroimaging:Volume",
   "properties": {
     "additionalRemarks": {
       "_instruction": "Enter any additional remarks concerning this volume.",
@@ -21,7 +21,7 @@
     "dataLocation": {
       "_instruction": "Add the location of the file or file bundle in which the volume is stored.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
+        "core:File"
       ]
     },
     "dimension": {
@@ -43,7 +43,7 @@
     },
     "voxelSize": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the physical voxel size for this image (in x,y,z order).",
       "maxItems": 3,

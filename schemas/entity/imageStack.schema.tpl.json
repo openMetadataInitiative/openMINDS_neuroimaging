@@ -1,6 +1,6 @@
 {
   "_extends": "entity/image.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/neuroimaging/ImageStack",
+  "_type": "neuroimaging:ImageStack",
   "properties": {
     "numberOfImages": {
       "_instruction": "Enter the total number of images in this stack (at least two).",
@@ -9,7 +9,7 @@
     },
     "sliceThickness": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the thickness of each image slice in the stack."
     }

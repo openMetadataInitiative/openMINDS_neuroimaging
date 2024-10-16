@@ -1,28 +1,28 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/neuroimaging/MRIScannerUsage",
+  "_type": "neuroimaging:MRIScannerUsage",
   "properties": {
     "bValues": {
       "_instruction": "Add the b values coresponding to this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
+        "core:File"
       ]
     },
     "bVectors": {
       "_instruction": "Add the b vectors coresponding to this aquisition.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/File"
+        "core:File"
       ]
     },
     "dwellTime": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the dewell time of this aquistion."
     },
     "echoTime": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the echo times of this aquisition (TE).",
       "minItems": 1,
@@ -37,27 +37,27 @@
     },
     "flipAngle": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the flip angle of this scan (preferred units: degrees)."
     },
     "interSliceGap": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ],
       "_instruction": "Enter the inter slice distance of this scan."
     },
     "inversionTime": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the inversion time of this aquistion."
     },
     "mRAcquisitionType": {
       "_instruction": "Add the type of sequence readout (2D or 3D).",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MRAcquisitionType"
+        "controlledTerms:MRAcquisitionType"
       ]
     },
     "mTState": {
@@ -79,37 +79,37 @@
     "phaseEncodingDirection": {
       "_instruction": "Add the direction along which phase is modulated which may result in visible distortions.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/CartesianDirectionVector"
+        "controlledTerms:CartesianDirectionVector"
       ]
     },
     "pulseSequenceType": {
       "_instruction": "Add the type pulse sequence used for this scan.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MRIPulseSequence"
+        "controlledTerms:MRIPulseSequence"
       ]
     },
     "radiofrequencyCoilType": {
       "_instruction": "Add the type of radiofrequency coil.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/MRIRadiofrequencyCoilType"
+        "controlledTerms:MRIRadiofrequencyCoilType"
       ]
     },
     "repetitionTime": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "core:QuantitativeValue"
       ],
       "_instruction": "Enter the echo time of this aquisition (TR)."
     },
     "sliceOrder": {
       "_instruction": "Enter the time in which each slice have been aquired within each volume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+        "core:QuantitativeValueArray"
       ]
     },
     "sliceTiming": {
       "_instruction": "Enter the time in which each slice have been aquired within each volume.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+        "core:QuantitativeValueArray"
       ]
     },
     "spoilingState": {
@@ -118,7 +118,7 @@
     },
     "voxelSize": {
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValueArray"
+        "core:QuantitativeValueArray"
       ],
       "_instruction": "Enter voxel size this image: in this order x,y,z."
     }
