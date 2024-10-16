@@ -20,7 +20,7 @@
     "coordinateSpace": {
       "_instruction": "Add the coordinate space in which this image exists.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+        "sands:CustomCoordinateSpace"
       ]
     },
     "dataLocation": {
