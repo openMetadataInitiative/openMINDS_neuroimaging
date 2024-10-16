@@ -14,8 +14,8 @@
     "coordinateSpace": {
       "_instruction": "Add the coordinate space in which this volume exists.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion",
-        "https://openminds.ebrains.eu/sands/CustomCoordinateSpace"
+        "sands:CommonCoordinateSpaceVersion",
+        "sands:CustomCoordinateSpace"
       ]
     },
     "dataLocation": {
