@@ -1,7 +1,7 @@
 <a href="/img/openMINDS_MRI_logo_light.png">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/img/openMINDS_MRI_logo_dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="/img/openMINDS_MRI_logo_light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="/img/openMINDS_neuroimaging_logo_dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="/img/openMINDS_neuroimaging_logo_light.png">
     <img alt="openMINDS_MRI metadata model" src="/img/openMINDS_MRI_logo_light.png" title="Logo created by U. Schlegel, L. Zehl, C. Hagen Blixhavn" align="right" height="70">
   </picture>
 </a>
