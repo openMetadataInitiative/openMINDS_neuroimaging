@@ -6,12 +6,13 @@
   </picture>
 </a>
 
-# openMINDS_core
+# openMINDS_neuroimaging
+
 
 [![GitHub][license-shield]][license-url]
 [![GitHub contributors][contributors-shield]][contributors-url]
 
-The **openMINDS_MRI** repository hosts one of the metadata models of the **openMINDS metadata framework**. It defines modular metadata schemas for describing magnetic resonance imaging (MRI) experiments.
+The **openMINDS_neuroimaging** repository hosts one of the metadata models of the **openMINDS metadata framework**. It defines modular metadata schemas for describing magnetic resonance imaging (MRI) experiments.
 
 To generally learn more about the openMINDS metadata framework please go to :arrow_right: [**ReadTheDocs**][docu-url].  
 Or explore directly the metadata schemas of the openMINDS_MRI metadata model under :arrow_right: [**schema specifications**][docu-MRI-url].
