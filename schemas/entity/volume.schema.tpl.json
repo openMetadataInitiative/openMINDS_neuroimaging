@@ -6,7 +6,7 @@
       "type": "string"
     },
     "capturedWith": {
-      "_instruction": "Add the device used to captured this volume.",
+      "_instruction": "Add the device used to capture this volume.",
       "_linkedCategories": [
         "deviceUsage"
       ]

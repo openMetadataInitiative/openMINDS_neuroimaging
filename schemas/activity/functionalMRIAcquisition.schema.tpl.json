@@ -21,7 +21,7 @@
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volum)."
+      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volume)."
     },
     "delayTime": {
       "_embeddedTypes": [
@@ -30,7 +30,7 @@
       "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition."
     },
     "fieldMap": {
-      "_instruction": "Add the images or field maps used for correction of inhemogenties in B0 field of this aquisition.",
+      "_instruction": "Add the images or field maps used for correction of inhomogeneities in B0 field of this acquisition.",
       "_linkedTypes": [
         "core:File"
       ],
@@ -48,13 +48,13 @@
       ]
     },
     "structuralMRI": {
-      "_instruction": "Add the structural MRI relavent for this aquisition.",
+      "_instruction": "Add the structural MRI relevant for this acquisition.",
       "_linkedTypes": [
         "core:File"
       ]
     },
     "volumeTiming": {
-      "_instruction": "Enter aquisition times of each vloume.",
+      "_instruction": "Enter acquisition times of each vloume.",
       "_linkedTypes": [
         "core:QuantitativeValueArray"
       ]

@@ -6,7 +6,7 @@
       "type": "string"
     },
     "capturedWith": {
-      "_instruction": "Add the device used to captured this image.",
+      "_instruction": "Add the device used to capture this image.",
       "_linkedCategories": [
         "deviceUsage"
       ]

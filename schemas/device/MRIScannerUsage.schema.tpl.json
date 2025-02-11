@@ -3,13 +3,13 @@
   "_type": "neuroimaging:MRIScannerUsage",
   "properties": {
     "bValues": {
-      "_instruction": "Add the b values coresponding to this aquisition.",
+      "_instruction": "Add the b values coresponding to this acquisition.",
       "_linkedTypes": [
         "core:File"
       ]
     },
     "bVectors": {
-      "_instruction": "Add the b vectors coresponding to this aquisition.",
+      "_instruction": "Add the b vectors coresponding to this acquisition.",
       "_linkedTypes": [
         "core:File"
       ]
@@ -24,13 +24,13 @@
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the dewell time of this aquistion."
+      "_instruction": "Enter the dwell time of this aquistion."
     },
     "echoTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the echo times of this aquisition (TE).",
+      "_instruction": "Enter the echo times of this acquisition (TE).",
       "minItems": 1,
       "type": "array",
       "uniqueItems": true
@@ -60,13 +60,13 @@
       ],
       "_instruction": "Enter the inversion time of this aquistion."
     },
-    "mRAcquisitionType": {
+    "MRAcquisitionType": {
       "_instruction": "Add the type of sequence readout (2D or 3D).",
       "_linkedTypes": [
         "controlledTerms:MRAcquisitionType"
       ]
     },
-    "mTState": {
+    "MTState": {
       "_instruction": "Boolean stating whether the magnetization transfer pulse is applied.",
       "type": "boolean"
     },
@@ -79,7 +79,7 @@
       "type": "number"
     },
     "parallelAcquisitionTechnique": {
-      "_ instruction": "Enter the parallel acquisition technique sequance name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
+      "_ instruction": "Enter the parallel acquisition technique sequence name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
       "type": "string"
     },
     "phaseEncodingDirection": {
@@ -104,16 +104,16 @@
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the echo time of this aquisition (TR)."
+      "_instruction": "Enter the echo time of this acquisition (TR)."
     },
     "sliceOrder": {
-      "_instruction": "Enter the time in which each slice have been aquired within each volume.",
+      "_instruction": "Enter the time in which each slice have been acquired within each volume.",
       "_linkedTypes": [
         "core:QuantitativeValueArray"
       ]
     },
     "sliceTiming": {
-      "_instruction": "Enter the time in which each slice have been aquired within each volume.",
+      "_instruction": "Enter the time in which each slice have been acquired within each volume.",
       "_linkedTypes": [
         "core:QuantitativeValueArray"
       ]
