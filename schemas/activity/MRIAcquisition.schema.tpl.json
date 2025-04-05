@@ -1,5 +1,5 @@
 {
-  "_extends": "/core/schemas/research/ExperimentalActivity.schema.tpl.json",
+  "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "properties": {
     "contrastAgent": {
       "_instruction": "Add the contrast agent used for this scan.",
