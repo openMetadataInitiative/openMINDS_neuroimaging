@@ -83,10 +83,10 @@
       "type": "string"
     },
     "phaseEncodingDirection": {
-      "_instruction": "Enter the direction vector along which phase encoding is applied. This vector indicates the axis of potential distortions in image space (e.g., [1,0,0] for i, [0,1,0] for j, [0,0,1] for k). A negative value indicates reversed polarity.",
       "_embeddedTypes": [
         "core:QuantitativeValueArray"
-      ]
+      ],
+      "_instruction": "Enter the direction vector along which phase encoding is applied. This vector indicates the axis of potential distortions in image space (e.g., [1,0,0] for i, [0,1,0] for j, [0,0,1] for k). A negative value indicates reversed polarity."
     },
     "pulseSequenceType": {
       "_instruction": "Add the type pulse sequence used for this scan.",
@@ -99,6 +99,10 @@
       "_linkedTypes": [
         "controlledTerms:MRIRadiofrequencyCoilType"
       ]
+    },
+    "receiveCoilName": {
+      "_instruction": "Enter the name of the receive coil used. (Corresponds to DICOM tag 0018,1250)",
+      "type": "string"
     },
     "repetitionTime": {
       "_embeddedTypes": [
@@ -121,6 +125,10 @@
     "spoilingState": {
       "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization.",
       "type": "boolean"
+    },
+    "transmitCoilName": {
+      "_instruction": "Enter the name of the transmit coil used. (Corresponds to DICOM tag 0018,1251)",
+      "type": "string"
     },
     "voxelSize": {
       "_embeddedTypes": [
