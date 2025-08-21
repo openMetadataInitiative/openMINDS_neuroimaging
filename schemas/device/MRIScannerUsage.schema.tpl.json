@@ -60,10 +60,10 @@
       ],
       "_instruction": "Enter the inversion time of this aquistion."
     },
-    "MRAcquisitionType": {
-      "_instruction": "Add the type of sequence readout (2D or 3D).",
+    "MRSpatialEncoding": {
+      "_instruction": "Add how spatial information was encoded. Examples include 'frequencyPhaseEncoding' (2D) and 'frequencyPhasePhaseEncoding' (3D).",
       "_linkedTypes": [
-        "controlledTerms:MRAcquisitionType"
+        "controlledTerms:MRSpatialEncoding"
       ]
     },
     "MTState": {
