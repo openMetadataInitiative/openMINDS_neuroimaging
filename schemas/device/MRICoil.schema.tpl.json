@@ -1,0 +1,53 @@
+{
+  "_extends": "/core/schemas/products/device.schema.tpl.json",
+  "_type": "https://openminds.ebrains.eu/neuroimaging/MRICoil",
+  "properties": {
+    "elementCount": {
+      "_instruction": "Total number of coil elements.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "radiofrequencyCoilType": {
+      "_instruction": "Add the coil type (e.g., volume, surface, phased array).",
+      "_linkedTypes": [
+        "controlledTerms:MRIRadiofrequencyCoilType"
+      ]
+    },
+    "mountingType": {
+      "_instruction": "Add the coil mounting type (e.g., BuiltIn, External, Interventional, Wearable).",
+      "_linkedTypes": [
+        "controlledTerms:MRIRadiofrequencyCoilMountingType"
+      ]
+    },
+    "dimension": {
+      "_instruction": "Add the dimention of this coil",
+      "_linkedCategories": [
+        "mathematicalShapes"
+      ]
+    },
+    "coilGeometry": {
+      "_instruction": "Add the geometry of the coil (e.g., birdcage, loop, Helmholtz).",
+      "_linkedTypes": [
+        "controlledTerms:MRIRadiofrequencyCoilGeometry"
+      ]
+    },
+    "targetAnatomyCoverage": {
+      "_instruction": "Add the anatomical region(s) the coil is designed to cover.",
+      "_linkedTypes": [
+        "controlledTerms:AnatomicalRegion"
+      ]
+    },
+    "parallelImagingCapable": {
+      "_instruction": "Indicate whether the coil supports parallel imaging.",
+      "type": "boolean"
+    },
+    "activeElements": {
+      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "radiofrequencyCoilType",
+    "elementCount"
+  ]
+}
