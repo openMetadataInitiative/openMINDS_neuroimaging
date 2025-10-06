@@ -2,10 +2,14 @@
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "https://openminds.ebrains.eu/neuroimaging/MRICoilUsage",
   "properties": {
-    "radiofrequencyCoilRole": {
-      "_instruction": "Add the functional role of the RF coil (e.g., transmit, receive, transmit/receive).",
+    "activeElements": {
+      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
+      "type": "string"
+    },
+    "device": {
+      "_instruction": "Add the MRI Coil used.",
       "_linkedTypes": [
-        "controlledTerms:MRIradiofrequencyCoilRole"
+        "neuroimaging:MRICoil"
       ]
     },
     "mountingLocation": {
@@ -14,9 +18,11 @@
         "controlledTerms:AnatomicalRegion"
       ]
     },
-    "activeElements": {
-      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
-      "type": "string"
+    "radiofrequencyCoilRole": {
+      "_instruction": "Add the functional role of the RF coil (e.g., transmit, receive, transmit/receive).",
+      "_linkedTypes": [
+        "controlledTerms:MRIradiofrequencyCoilRole"
+      ]
     }
   },
   "required": [
