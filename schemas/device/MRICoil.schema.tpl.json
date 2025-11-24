@@ -1,42 +1,48 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
-  "_type": "https://openminds.ebrains.eu/neuroimaging/MRICoil",
+  "_type": "neuroimaging:MRICoil",
   "properties": {
-    "activeElements": {
-      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
-      "type": "string"
+    "activeElement": {
+      "_instruction": "Enter all the identifiers of the active coil elements or channels.",
+      "_linkedTypes": [
+        "core:GenericIdentifier",
+        "string"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
     },
     "coilGeometry": {
       "_instruction": "Add the geometry of the coil (e.g., birdcage, loop, Helmholtz).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadiofrequencyCoilGeometry"
+        "controlledTerms:MRIRadioFrequencyCoilGeometry"
       ]
     },
     "dimension": {
-      "_instruction": "Add the dimention of this coil",
+      "_instruction": "Add the dimension of this coil.",
       "_linkedCategories": [
-        "mathematicalShapes"
+        "mathematicalShape"
       ]
     },
     "elementCount": {
-      "_instruction": "Total number of coil elements.",
+      "_instruction": "Enter the total number of coil elements.",
       "minimum": 1,
       "type": "integer"
     },
     "mountingType": {
-      "_instruction": "Add the coil mounting type (e.g., BuiltIn, External, Interventional, Wearable).",
+      "_instruction": "Add the coil mounting type (e.g., built-in, external, interventional, wearable).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadiofrequencyCoilMountingType"
+        "controlledTerms:MRIRadioFrequencyCoilMountingType"
       ]
     },
     "parallelImagingCapable": {
       "_instruction": "Indicate whether the coil supports parallel imaging.",
       "type": "boolean"
     },
-    "radiofrequencyCoilType": {
+    "radioFrequencyCoilType": {
       "_instruction": "Add the coil type (e.g., volume, surface, phased array).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadiofrequencyCoilType"
+        "controlledTerms:MRIRadioFrequencyCoilType"
       ]
     },
     "targetAnatomyCoverage": {
@@ -47,7 +53,7 @@
     }
   },
   "required": [
-    "radiofrequencyCoilType",
+    "radioFrequencyCoilType",
     "elementCount"
   ]
 }
