@@ -41,6 +41,10 @@
       ],
       "_instruction": "Enter the flip angle of this scan (preferred units: degrees)."
     },
+    "GradientCorrection": {
+      "_instruction": "Enter the method used for gradient correction",
+      "type": "controlledTerms:GradientCorrection:" 
+    },
     "interSliceGap": {
       "_embeddedTypes": [
         "core:QuantitativeValue",
