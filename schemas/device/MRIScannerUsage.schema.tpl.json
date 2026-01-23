@@ -1,6 +1,11 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "neuroimaging:MRIScannerUsage",
+      "required": [
+    "echoTime",
+    "repetitionTime",
+    "sliceTiming"
+  ],
   "properties": {
     "bValues": {
       "_instruction": "Add the b values coresponding to this acquisition.",
