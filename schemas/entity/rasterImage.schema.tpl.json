@@ -1,0 +1,28 @@
+{
+  "_extends": "entity/digitalRepresentation.schema.tpl.json",
+  "_type": "neuroimaging:RasterImage",
+  "properties": {
+    "dimension": {
+      "_instruction": "Enter the dimension of this image in pixels.",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "pixelSize": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ],
+      "_instruction": "Enter the physical pixel size for this image (in x,y order).",
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  },
+  "required": [
+    "pixelSize",
+    "dimension"
+  ]
+}
