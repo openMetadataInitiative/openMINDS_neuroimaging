@@ -64,13 +64,9 @@
         "controlledTerms:MRSpatialEncoding"
       ]
     },
-    "MTState": {
-      "_instruction": "Boolean stating whether the magnetization transfer pulse is applied.",
-      "type": "boolean"
-    },
-    "nonlinearGradientCorrection": {
-      "_instruction": "Has this scan, been corrected for gradient nonlinearities by the scanner sequence?",
-      "type": "boolean"
+    "MTpulseShape": {
+      "_instruction": "Enter the shape of the magnetization transfer radiofrenquency pulse waveform.",
+      "type": "controlledTerms:MTpulseShape"
     },
     "numberOfVolumesDiscardedByScanner": {
       "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
