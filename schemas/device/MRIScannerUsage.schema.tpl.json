@@ -85,7 +85,7 @@
     },
     "parallelAcquisitionTechnique": {
       "_ instruction": "Enter the parallel acquisition technique sequence name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
-      "type": "string"
+      "type": "controlledTerms:parallelAcquisitionTechnique"
     },
     "phaseEncodingDirection": {
       "_embeddedTypes": [
