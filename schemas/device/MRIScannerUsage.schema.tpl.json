@@ -100,9 +100,9 @@
         "core:QuantitativeValueArray"
       ]
     },
-    "spoilingState": {
-      "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization.",
-      "type": "boolean"
+    "spoilingType": {
+      "_instruction": "Enter the spoiling method used by a spoiled sequence.",
+      "type": "controlledTerms:SpoilingType"
     },
     "usedCoils": {
       "_instruction": "Add the radiofrequency coils used for this experiment. Corresponds to DICOM tags (0018,9042) [MR Receive Coil Sequence Attribute] and (0018,9049) [MR Transmit Coil Sequence Attribute]. Preferably, create an object describing the coil (e.g., an instance of neuroimaging:MRIRadiofrequencyCoil); if less information is available, provide at least the device type.",
