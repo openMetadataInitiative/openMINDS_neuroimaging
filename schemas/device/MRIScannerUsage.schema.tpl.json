@@ -14,12 +14,6 @@
         "core:File"
       ]
     },
-    "device": {
-      "_instruction": "Add the MRI Scanner used.",
-      "_linkedTypes": [
-        "neuroimaging:MRIScanner"
-      ]
-    },
     "dwellTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
