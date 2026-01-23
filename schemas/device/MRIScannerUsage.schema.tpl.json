@@ -94,12 +94,6 @@
       ],
       "_instruction": "Enter the echo time of this acquisition (TR)."
     },
-    "sliceOrder": {
-      "_instruction": "Enter the time in which each slice have been acquired within each volume.",
-      "_linkedTypes": [
-        "core:QuantitativeValueArray"
-      ]
-    },
     "sliceTiming": {
       "_instruction": "Enter the time in which each slice have been acquired within each volume.",
       "_linkedTypes": [
