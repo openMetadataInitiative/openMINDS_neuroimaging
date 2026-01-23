@@ -1,5 +1,5 @@
 {
-  "_extends": "entity/volume.schema.tpl.json",
+  "_extends": "entity/3DRepresentation.schema.tpl.json",
   "_type": "neuroimaging:VolumeSequence",
   "properties": {
     "numberOfVolumes": {
