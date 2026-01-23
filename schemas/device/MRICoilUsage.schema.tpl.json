@@ -1,0 +1,37 @@
+{
+  "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
+  "_type": "neuroimaging:MRICoilUsage",
+  "properties": {
+    "activeElement": {
+      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
+      "_linkedTypes": [
+        "core:GenericIdentifier",
+        "string"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "device": {
+      "_instruction": "Add the MRI Coil used.",
+      "_linkedTypes": [
+        "neuroimaging:MRICoil"
+      ]
+    },
+    "mountingLocation": {
+      "_instruction": "Describe how the coil is mounted or positioned relative to the subject (e.g., head, knee, body).",
+      "_linkedTypes": [
+        "controlledTerms:AnatomicalRegion"
+      ]
+    },
+    "radiofrequencyCoilRole": {
+      "_instruction": "Add the functional role of the RF coil (e.g., transmit, receive, transmit/receive).",
+      "_linkedTypes": [
+        "controlledTerms:MRIradioFrequencyCoilRole"
+      ]
+    }
+  },
+  "required": [
+    "radioFrequencyCoilRole"
+  ]
+}

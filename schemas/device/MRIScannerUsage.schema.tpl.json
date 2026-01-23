@@ -94,16 +94,6 @@
         "controlledTerms:MRIPulseSequence"
       ]
     },
-    "radiofrequencyCoilType": {
-      "_instruction": "Add the type of radiofrequency coil.",
-      "_linkedTypes": [
-        "controlledTerms:MRIRadiofrequencyCoilType"
-      ]
-    },
-    "receiveCoilName": {
-      "_instruction": "Enter the name of the receive coil used. (Corresponds to DICOM tag 0018,1250)",
-      "type": "string"
-    },
     "repetitionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
@@ -126,9 +116,12 @@
       "_instruction": "Boolean stating whether the pulse sequence uses any type of spoiling strategy to suppress residual transverse magnetization.",
       "type": "boolean"
     },
-    "transmitCoilName": {
-      "_instruction": "Enter the name of the transmit coil used. (Corresponds to DICOM tag 0018,1251)",
-      "type": "string"
+    "usedCoils": {
+      "_instruction": "Add the radiofrequency coils used for this experiment. Corresponds to DICOM tags (0018,9042) [MR Receive Coil Sequence Attribute] and (0018,9049) [MR Transmit Coil Sequence Attribute]. Preferably, create an object describing the coil (e.g., an instance of neuroimaging:MRIRadiofrequencyCoil); if less information is available, provide at least the device type.",
+      "_linkedTypes": [
+        "controlledTerms:DeviceType",
+        "neuroimaging:MRICoilUsage"
+      ]
     },
     "voxelSize": {
       "_embeddedTypes": [
