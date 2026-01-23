@@ -1,5 +1,5 @@
 {
-  "_extends": "entity/image.schema.tpl.json",
+  "_extends": "entity/rasterImage.schema.tpl.json",
   "_type": "neuroimaging:ImageSequence",
   "properties": {
     "numberOfImages": {
