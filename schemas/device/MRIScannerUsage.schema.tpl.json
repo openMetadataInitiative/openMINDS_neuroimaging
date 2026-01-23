@@ -82,12 +82,6 @@
       ],
       "_instruction": "Enter the direction vector along which phase encoding is applied. This vector indicates the axis of potential distortions in image space (e.g., [1,0,0] for i, [0,1,0] for j, [0,0,1] for k). A negative value indicates reversed polarity."
     },
-    "pulseSequenceType": {
-      "_instruction": "Add the type pulse sequence used for this scan.",
-      "_linkedTypes": [
-        "controlledTerms:MRIPulseSequence"
-      ]
-    },
     "repetitionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
