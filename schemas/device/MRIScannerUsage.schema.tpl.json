@@ -64,6 +64,12 @@
         "controlledTerms:MRSpatialEncoding"
       ]
     },
+    "MRIWeighting": {
+      "_instruction": "Add MRI weighting type (e.g.T1Weighting, T2Weighting, R2Weighting, PDWeighting). Note: these terms are not standadized, they merely communicate the image contrast is dominated by the chosen tissue parameter",
+      "_linkedTypes": [
+        "controlledTerms:MRIWeighting"
+      ]
+    },
     "MTPulseShape": {
       "_instruction": "Enter the shape of the magnetization transfer radiofrenquency pulse waveform.",
       "type": "controlledTerms:MTPulseShape"
