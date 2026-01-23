@@ -81,7 +81,7 @@
     },
     "numberOfVolumesDiscardedByScanner": {
       "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
-      "type": "number"
+      "type": "integer"
     },
     "parallelAcquisitionTechnique": {
       "_ instruction": "Enter the parallel acquisition technique sequence name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
