@@ -26,6 +26,13 @@
       "_linkedTypes": [
         "controlledTerms:AnatomicalAxesOrientation"
       ]
+    },
+    "output":{
+      "_instruction": "Add the file generated during this session.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+
     }
   },
   "required": [
