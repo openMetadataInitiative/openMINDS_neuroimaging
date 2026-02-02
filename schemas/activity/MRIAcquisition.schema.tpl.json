@@ -27,18 +27,17 @@
         "core:File"
       ]
     },
-    "specimenOrientation": {
-      "_instruction": "Add the anatomical orientation of the specimen in the scanner.",
-      "_linkedTypes": [
-        "controlledTerms:AnatomicalAxesOrientation"
-      ]
-    },
     "output":{
       "_instruction": "Add the file generated during this session.",
       "_linkedTypes": [
         "core:File"
       ]
-
+    },
+    "specimenOrientation": {
+      "_instruction": "Add the anatomical orientation of the specimen in the scanner.",
+      "_linkedTypes": [
+        "controlledTerms:AnatomicalAxesOrientation"
+      ]
     }
   }
 }
