@@ -23,15 +23,15 @@
 
       ]
     },
-    "description": {
-      "_instruction": "Add the location of the file or file bundle in which the digital representation is stored.",
-      "type": "string"
-    },
     "dataLocation": {
       "_instruction": "Add the location of the file or file bundle in which the digital representation is stored.",
       "_linkedTypes": [
         "core:File"
       ]
+    },
+    "description": {
+      "_instruction": "Add a description of this digital representation.",
+      "type": "string"
     },
     "lookupLabel": {
       "_instruction": "Enter a lookup label for this digital representation that may help you to find this instance more easily.",
