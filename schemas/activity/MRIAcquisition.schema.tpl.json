@@ -1,5 +1,11 @@
 {
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
+  "required": [
+    "device",
+    "input",
+    "output",
+    "specimenOrientation"
+  ],
   "properties": {
     "contrastAgent": {
       "_instruction": "Add the contrast agent used for this scan.",
@@ -34,11 +40,5 @@
       ]
 
     }
-  },
-  "required": [
-    "device",
-    "input",
-    "output",
-    "specimenOrientation"
-  ]
+  }
 }
