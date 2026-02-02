@@ -11,7 +11,7 @@
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the temporal resolution of this sequence."
+      "_instruction": "Enter the sample rate of this sequence."
     }
   },
   "required": [
