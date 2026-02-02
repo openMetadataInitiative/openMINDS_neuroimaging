@@ -35,10 +35,6 @@
         "controlledTerms:MRIRadioFrequencyCoilMountingType"
       ]
     },
-    "parallelImagingCapable": {
-      "_instruction": "Indicate whether the coil supports parallel imaging.",
-      "type": "boolean"
-    },
     "radioFrequencyCoilType": {
       "_instruction": "Add the coil type (e.g., volume, surface, phased array).",
       "_linkedTypes": [
