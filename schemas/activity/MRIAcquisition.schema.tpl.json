@@ -36,9 +36,9 @@
     }
   },
   "required": [
-    "input",
     "device",
-    "specimenOrientation",
-    "output"
+    "input",
+    "output",
+    "specimenOrientation"
   ]
 }
