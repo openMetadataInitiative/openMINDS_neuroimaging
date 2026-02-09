@@ -51,8 +51,8 @@
         "core:File"
       ]
     },
-    "structuralMRI": {
-      "_instruction": "Add the structural MRI relevant for this acquisition.",
+    "registration data": {
+      "_instruction": "Add the registration file corresponding to structural MRI relevant for this acquisition.",
       "_linkedTypes": [
         "core:File"
       ]
