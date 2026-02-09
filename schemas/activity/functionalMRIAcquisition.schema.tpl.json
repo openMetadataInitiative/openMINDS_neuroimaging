@@ -21,12 +21,6 @@
       "type": "array",
       "uniqueItems": true
     },
-    "delayAfterTrigger": {
-      "_embeddedTypes": [
-        "core:QuantitativeValue"
-      ],
-      "_instruction": "Enter the duration from trigger delivery to scan onset (only the first volume)."
-    },
     "delayTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
