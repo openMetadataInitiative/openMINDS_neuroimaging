@@ -63,10 +63,10 @@
       ],
       "_instruction": "Enter the inversion time of this aquistion."
     },
-    "MRSpatialEncoding": {
+    "SpatialEncoding": {
       "_instruction": "Add how spatial information was encoded. Examples include 'frequencyPhaseEncoding' (2D) and 'frequencyPhasePhaseEncoding' (3D).",
       "_linkedTypes": [
-        "controlledTerms:MRSpatialEncoding"
+        "controlledTerms:SpatialEncoding"
       ]
     },
     "MRIWeighting": {
