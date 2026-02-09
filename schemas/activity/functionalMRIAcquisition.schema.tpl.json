@@ -35,15 +35,15 @@
       "minItems": 1,
       "type": "array"
     },
-    "numberOfVolumesDiscardedByUser": {
-      "_instruction": "Enter number of volumes discarded by user before the first volume.",
-      "type": "number"
-    },
-    "sbref": {
-      "_instruction": "Add the single-band reference image for this volume.",
+    "motion correction": {
+      "_instruction": "Add the calibration file used for motion correction, corresponding to single-band reference image, for this volume.",
       "_linkedTypes": [
         "core:File"
       ]
+    },
+    "numberOfVolumesDiscardedByUser": {
+      "_instruction": "Enter number of volumes discarded by user before the first volume.",
+      "type": "number"
     },
     "registration data": {
       "_instruction": "Add the registration file corresponding to structural MRI relevant for this acquisition.",
