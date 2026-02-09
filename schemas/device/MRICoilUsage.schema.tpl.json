@@ -29,6 +29,12 @@
       "_linkedTypes": [
         "controlledTerms:MRIradioFrequencyCoilRole"
       ]
+    }, 
+    "targetAnatomyCoverage": {
+      "_instruction": "Add the anatomical region(s) the coil is designed to cover.",
+      "_linkedTypes": [
+        "controlledTerms:AnatomicalRegion"
+      ]
     }
   },
   "required": [
