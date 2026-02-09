@@ -14,7 +14,7 @@
     "mountingType": {
       "_instruction": "Add the coil mounting type (e.g., built-in, external, interventional, wearable).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadioFrequencyCoilMountingType"
+        "controlledTerms:MountingType"
       ]
     },
     "radioFrequencyCoilType": {
