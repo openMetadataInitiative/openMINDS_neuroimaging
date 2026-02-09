@@ -48,7 +48,7 @@
     },
     "gradientCorrection": {
       "_instruction": "Enter the method used for gradient correction",
-      "type": "controlledTerms:GradientCorrection:" 
+      "type": "controlledTerms:AnalysisTechnique" 
     },
     "interSliceGap": {
       "_embeddedTypes": [
