@@ -18,9 +18,9 @@
       ]
     },
     "radioFrequencyCoilType": {
-      "_instruction": "Add the coil type (e.g., volume, surface, phased array).",
+      "_instruction": "Add the coil type (e.g., MRI surface coil, MRI volume coil, MRI multi-coil array ).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadioFrequencyCoilType"
+        "controlledTerms:DeviceType"
       ]
     }
   }
