@@ -108,7 +108,7 @@
     "spoilingType": {
       "_instruction": "Enter the spoiling method used by a spoiled sequence.",
       "_linkedTypes": [
-        "controlledTerms:SpoilingType"
+        "controlledTerms:MRISpoilingType"
       ]
     },
     "usedCoils": {
