@@ -1,6 +1,9 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "neuroimaging:MRICoilUsage",
+    "required": [
+    "radioFrequencyCoilRole"
+  ],
   "properties": {
     "activeElement": {
       "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
@@ -36,8 +39,5 @@
         "controlledTerms:AnatomicalRegion"
       ]
     }
-  },
-  "required": [
-    "radioFrequencyCoilRole"
-  ]
+  }
 }
