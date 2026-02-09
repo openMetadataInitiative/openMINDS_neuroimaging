@@ -75,9 +75,9 @@
         "controlledTerms:MRIWeighting"
       ]
     },
-    "MTPulseShape": {
+    "MagnetizationTransferTPulseShape": {
       "_instruction": "Enter the shape of the magnetization transfer radiofrenquency pulse waveform.",
-      "type": "controlledTerms:MTPulseShape"
+      "type": "controlledTerms:PulseShape"
     },
     "numberOfVolumesDiscardedByScanner": {
       "_instruction": "Enter number of volumes discarded by scanner before the first volume.",
