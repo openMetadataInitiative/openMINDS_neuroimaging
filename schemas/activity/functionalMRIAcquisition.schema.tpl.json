@@ -27,8 +27,8 @@
       ],
       "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition."
     },
-    "fieldMap": {
-      "_instruction": "Add the images or field maps used for correction of inhomogeneities in B0 field of this acquisition.",
+    "distorsion correction": {
+      "_instruction": "Add the calibration file corresponding to images or field maps used for correction of inhomogeneities in B0 field of this acquisition.",
       "_linkedTypes": [
         "core:File"
       ],
