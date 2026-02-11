@@ -3,7 +3,7 @@
   "_type": "neuroimaging:MRICoil",
   "required": [
     "elementCount",
-    "radioFrequencyCoilType"
+    "type"
   ],
   "properties": {
     "elementCount": {
@@ -17,7 +17,7 @@
         "controlledTerms:DeviceMountingType"
       ]
     },
-    "radioFrequencyCoilType": {
+    "type": {
       "_instruction": "Add the coil type (e.g., MRI surface coil, MRI volume coil, MRI multi-coil array ).",
       "_linkedTypes": [
         "controlledTerms:DeviceType"
