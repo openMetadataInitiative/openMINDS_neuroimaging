@@ -1,7 +1,7 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "neuroimaging:MRIScannerUsage",
-      "required": [
+  "required": [
     "echoTime",
     "repetitionTime",
     "sliceTiming"
