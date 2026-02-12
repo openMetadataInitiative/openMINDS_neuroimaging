@@ -96,12 +96,6 @@
       "minItems": 3,
       "type": "array"
     },
-    "totalReadOutTime": {
-      "_instruction": "Enter the total readout time (TRT) as the time interval between acquisition of the first and last k-space lines in the phase-encoding direction during the echo-planar imaging readout.",
-      "_embeddedTypes": [
-        "core:QuantitativeValue"
-      ]
-    },
     "repetitionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
