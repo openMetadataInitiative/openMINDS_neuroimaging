@@ -28,7 +28,7 @@
       ]
     },
     "mountingLocation": {
-      "_instruction": "Describe how the coil is mounted or positioned relative to the subject (e.g., head, knee, body).",
+      "_instruction": "Add the position of the coil relative to the subject's anatomy (e.g., head, knee, body).",
       "_linkedTypes": [
         "controlledTerms:AnatomicalRegion"
       ]
