@@ -114,6 +114,12 @@
         "controlledTerms:MRISpoilingType"
       ]
     },
+    "totalReadOutTime": {
+      "_instruction": "Enter the total readout time (TRT) as the time interval between acquisition of the first and last k-space lines in the phase-encoding direction during the echo-planar imaging readout.",
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ]
+    },
     "usedCoils": {
       "_instruction": "Add the radiofrequency coils used for this experiment. Corresponds to DICOM tags (0018,9042) [MR Receive Coil Sequence Attribute] and (0018,9049) [MR Transmit Coil Sequence Attribute]. Preferably, create an object describing the coil (e.g., an instance of neuroimaging:MRIRadiofrequencyCoil); if less information is available, provide at least the device type.",
       "_linkedTypes": [
