@@ -63,12 +63,6 @@
       ],
       "_instruction": "Enter the inversion time of this aquistion."
     },
-    "spatialEncoding": {
-      "_instruction": "Add how spatial information was encoded. Examples include 'frequencyPhaseEncoding' (2D) and 'frequencyPhasePhaseEncoding' (3D).",
-      "_linkedTypes": [
-        "controlledTerms:SpatialEncoding"
-      ]
-    },
     "MRIWeighting": {
       "_instruction": "Add MRI weighting type (e.g.T1Weighting, T2Weighting, R2Weighting, PDWeighting). Note: these terms are not standadized, they merely communicate the image contrast is dominated by the chosen tissue parameter",
       "_linkedTypes": [
@@ -106,6 +100,12 @@
       "_instruction": "Enter the time in which each slice have been acquired within each volume, relative to the beginning of the volume acquisition.",
       "_linkedTypes": [
         "core:QuantitativeValueArray"
+      ]
+    },
+    "spatialEncoding": {
+      "_instruction": "Add how spatial information was encoded. Examples include 'frequencyPhaseEncoding' (2D) and 'frequencyPhasePhaseEncoding' (3D).",
+      "_linkedTypes": [
+        "controlledTerms:SpatialEncoding"
       ]
     },
     "spoilingType": {
