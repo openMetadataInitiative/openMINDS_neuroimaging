@@ -1,6 +1,9 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "_type": "neuroimaging:MRIScanner",
+  "required": [
+    "magneticFieldStrength"
+  ],
   "properties": {
     "magneticFieldStrength": {
       "_embeddedTypes": [
