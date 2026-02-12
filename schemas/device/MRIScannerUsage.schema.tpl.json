@@ -7,17 +7,14 @@
     "sliceTiming"
   ],
   "properties": {
-    "bValues": {
-      "_instruction": "Add the b values coresponding to this acquisition.",
+    "diffusionEncodingParameters": {
+      "_instruction": "Enter two files corresponding to b-values and b-vectors parameters used to generate diffusion images.",
       "_linkedTypes": [
         "core:File"
-      ]
-    },
-    "bVectors": {
-      "_instruction": "Add the b vectors coresponding to this acquisition.",
-      "_linkedTypes": [
-        "core:File"
-      ]
+      ],
+      "minItems": 2, 
+      "maxItems": 2,
+      "type" : "array"
     },
     "dwellTime": {
       "_embeddedTypes": [
