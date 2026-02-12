@@ -75,7 +75,7 @@
         "controlledTerms:MRIWeighting"
       ]
     },
-    "MagnetizationTransferPulseShape": {
+    "magnetizationTransferPulseShape": {
       "_instruction": "Enter the shape of the magnetization transfer radiofrenquency pulse waveform.",
       "type": "controlledTerms:PulseShape"
     },
@@ -88,10 +88,19 @@
       "type": "controlledTerms:MRIparallelAcquisitionTechnique"
     },
     "phaseEncodingDirection": {
+      "_instruction": "Enter the phase encoding direction as a signed unit vector in the scanner or image coordinate system (e.g., [+/-1, 0, 0], [0, +/-1, 0], or [0, 0, +/-1]), where the single nonzero component indicates the x, y, or z axis of phase encoding and the sign indicates the polarity of k-space traversal.",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "totalReadOutTime": {
+      "_instruction": "Enter the total readout time (TRT) as the time interval between acquisition of the first and last k-space lines in the phase-encoding direction during the echo-planar imaging readout.",
       "_embeddedTypes": [
-        "core:QuantitativeValueArray"
-      ],
-      "_instruction": "Enter the direction vector along which phase encoding is applied. This vector indicates the axis of potential distortions in image space (e.g., [1,0,0] for i, [0,1,0] for j, [0,0,1] for k). A negative value indicates reversed polarity."
+        "core:QuantitativeValue"
+      ]
     },
     "repetitionTime": {
       "_embeddedTypes": [
