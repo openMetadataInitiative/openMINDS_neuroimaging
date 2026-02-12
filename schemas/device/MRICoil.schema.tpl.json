@@ -1,9 +1,6 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "_type": "neuroimaging:MRICoil",
-  "required": [
-    "type"
-  ],
   "properties": {
     "elementCount": {
       "_instruction": "Enter the total number of coil elements.",
@@ -14,12 +11,6 @@
       "_instruction": "Add the coil mounting type (e.g., built-in, external, interventional, wearable).",
       "_linkedTypes": [
         "controlledTerms:DeviceMountingType"
-      ]
-    },
-    "type": {
-      "_instruction": "Add the coil type (e.g., MRI surface coil, MRI volume coil, MRI multi-coil array ).",
-      "_linkedTypes": [
-        "controlledTerms:DeviceType"
       ]
     }
   }
