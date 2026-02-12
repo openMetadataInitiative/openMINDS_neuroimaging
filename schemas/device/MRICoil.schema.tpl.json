@@ -2,28 +2,6 @@
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "_type": "neuroimaging:MRICoil",
   "properties": {
-    "activeElement": {
-      "_instruction": "Enter all the identifiers of the active coil elements or channels.",
-      "_linkedTypes": [
-        "core:GenericIdentifier",
-        "string"
-      ],
-      "minItems": 1,
-      "type": "array",
-      "uniqueItems": true
-    },
-    "coilGeometry": {
-      "_instruction": "Add the geometry of the coil (e.g., birdcage, loop, Helmholtz).",
-      "_linkedTypes": [
-        "controlledTerms:MRIRadioFrequencyCoilGeometry"
-      ]
-    },
-    "dimension": {
-      "_instruction": "Add the dimension of this coil.",
-      "_linkedCategories": [
-        "mathematicalShape"
-      ]
-    },
     "elementCount": {
       "_instruction": "Enter the total number of coil elements.",
       "minimum": 1,
@@ -32,28 +10,8 @@
     "mountingType": {
       "_instruction": "Add the coil mounting type (e.g., built-in, external, interventional, wearable).",
       "_linkedTypes": [
-        "controlledTerms:MRIRadioFrequencyCoilMountingType"
-      ]
-    },
-    "parallelImagingCapable": {
-      "_instruction": "Indicate whether the coil supports parallel imaging.",
-      "type": "boolean"
-    },
-    "radioFrequencyCoilType": {
-      "_instruction": "Add the coil type (e.g., volume, surface, phased array).",
-      "_linkedTypes": [
-        "controlledTerms:MRIRadioFrequencyCoilType"
-      ]
-    },
-    "targetAnatomyCoverage": {
-      "_instruction": "Add the anatomical region(s) the coil is designed to cover.",
-      "_linkedTypes": [
-        "controlledTerms:AnatomicalRegion"
+        "controlledTerms:DeviceMountingType"
       ]
     }
-  },
-  "required": [
-    "radioFrequencyCoilType",
-    "elementCount"
-  ]
+  }
 }
