@@ -70,7 +70,7 @@
       "_instruction": "Enter the shape of the magnetization transfer (MT) radiofrenquency pulse waveform.",
       "type": "controlledTerms:PulseShape"
     },
-    "numberOfDiscarded": {
+    "numberOfVolumeDiscarded": {
       "_instruction": "Enter number of volumes discarded before the first volume.",
       "type": "integer"
     },
