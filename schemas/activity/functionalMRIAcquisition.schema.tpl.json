@@ -1,7 +1,7 @@
 {
   "_extends": "activity/MRIAcquisition.schema.tpl.json",
   "_type": "neuroimaging:FunctionalMRIAcquisition",
-    "required": [
+  "required": [
     "acquisitionDuration",
     "behavioralProtocol"
     ], 
