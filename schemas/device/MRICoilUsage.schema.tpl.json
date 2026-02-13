@@ -16,7 +16,7 @@
       "uniqueItems": true
     },
     "coilRole": {
-      "_instruction": "Add the functional role of the coil (e.g., transmit, receive, transmit/receive).",
+      "_instruction": "Add the functional role of the coil (e.g., transmitting, receiving, transmitting/receiving).",
       "_linkedTypes": [
         "controlledTerms:MRICoilRole"
       ]
