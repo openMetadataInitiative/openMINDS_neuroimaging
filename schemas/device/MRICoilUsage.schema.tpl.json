@@ -15,8 +15,8 @@
       "type": "array",
       "uniqueItems": true
     },
-    "coilRole": {
-      "_instruction": "Add the functional role of the coil (e.g., transmitting, receiving, transmitting/receiving).",
+    "signalDirectionality": {
+      "_instruction": "Add the functional role of the coil. Examples include 'transmit-only', 'receive-only', 'transmit/receive'(bidirectional).",
       "_linkedTypes": [
         "controlledTerms:MRICoilRole"
       ]
