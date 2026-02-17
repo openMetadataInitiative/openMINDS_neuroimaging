@@ -15,12 +15,6 @@
       "type": "array",
       "uniqueItems": true
     },
-    "signalDirectionality": {
-      "_instruction": "Add the functional role of the coil. Examples include 'transmit-only', 'receive-only', 'transmit/receive'(bidirectional).",
-      "_linkedTypes": [
-        "controlledTerms:SignalDirectionality"
-      ]
-    }, 
     "device": {
       "_instruction": "Add the MRI Coil used.",
       "_linkedTypes": [
@@ -31,6 +25,12 @@
       "_instruction": "Add the position of the coil relative to the subject's anatomy (e.g., head, knee, body).",
       "_linkedTypes": [
         "controlledTerms:AnatomicalRegion"
+      ]
+    },
+    "signalDirectionality": {
+      "_instruction": "Add the signal directionality corresponding to the functional role of the coil. Examples include 'transmit-only', 'receive-only', 'transmit/receive'(bidirectional).",
+      "_linkedTypes": [
+        "controlledTerms:SignalDirectionality"
       ]
     },
     "targetAnatomyCoverage": {
