@@ -2,7 +2,7 @@
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "neuroimaging:MRICoilUsage",
   "required": [
-    "coilRole"
+    "signalDirectionality"
   ],
   "properties": {
     "activeElement": {
@@ -18,7 +18,7 @@
     "signalDirectionality": {
       "_instruction": "Add the functional role of the coil. Examples include 'transmit-only', 'receive-only', 'transmit/receive'(bidirectional).",
       "_linkedTypes": [
-        "controlledTerms:MRICoilRole"
+        "controlledTerms:SignalDirectionality"
       ]
     }, 
     "device": {
