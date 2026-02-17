@@ -19,6 +19,14 @@
         "neuroimaging:MRIScannerUsage"
       ]
     },
+    "distortionCorrection": {
+      "_instruction": "Add the calibration file corresponding to images or field maps used for correction of inhomogeneities in B0 field of this acquisition.",
+      "_linkedTypes": [
+        "core:File"
+      ],
+      "minItems": 1,
+      "type": "array"
+    },
     "input": {
       "_instruction": "Add the state of the subject or tissue sample before this session.",
       "_linkedTypes": [
@@ -26,8 +34,20 @@
         "core:TissueSampleState"
       ]
     },
+    "motionCorrection": {
+      "_instruction": "Add the calibration file used for motion correction, corresponding to single-band reference image, for this volume.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+    },
     "output":{
       "_instruction": "Add the file generated during this session.",
+      "_linkedTypes": [
+        "core:File"
+      ]
+    },
+    "registrationData": {
+      "_instruction": "Add the registration file corresponding to structural MRI relevant for this acquisition.",
       "_linkedTypes": [
         "core:File"
       ]
