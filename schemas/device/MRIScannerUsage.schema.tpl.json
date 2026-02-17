@@ -47,13 +47,6 @@
       "_instruction": "Enter the method used for gradient correction",
       "type": "controlledTerms:AnalysisTechnique" 
     },
-    "interSliceGap": {
-      "_embeddedTypes": [
-        "core:QuantitativeValue",
-        "core:QuantitativeValueRange"
-      ],
-      "_instruction": "Enter the inter slice distance of this scan."
-    },
     "inversionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
@@ -92,6 +85,13 @@
         "core:QuantitativeValue"
       ],
       "_instruction": "Enter the echo time of this acquisition (TR)."
+    },
+    "sliceGap": {
+      "_embeddedTypes": [
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
+      ],
+      "_instruction": "Enter the inter slice distance of this scan."
     },
     "sliceTiming": {
       "_instruction": "Enter the time in which each slice have been acquired within each volume, relative to the beginning of the volume acquisition.",
