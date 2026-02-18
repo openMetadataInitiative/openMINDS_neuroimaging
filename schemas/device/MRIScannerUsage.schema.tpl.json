@@ -145,7 +145,7 @@
         "controlledTerms:MRISpoilingType"
       ]
     },
-    "transmitBandwidth": {
+    "transmitterBandwidth": {
       "_instruction": "Enter the transmit bandwidth corresponding to range of frequencies excited by the radiofrequency pulse to image a specific slice (Hz/pixel).",
       "_embeddedTypes": [
         "core:QuantitativeValue"
