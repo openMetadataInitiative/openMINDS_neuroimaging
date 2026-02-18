@@ -121,6 +121,12 @@
         "controlledTerms:MRISpoilingType"
       ]
     },
+    "transmitBandwidth": {
+      "_instruction": "Enter the transmit bandwidth corresponding to range of frequencies excited by the radiofrequency pulse to image a specific slice (Hz/pixel).",
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ]
+    },
     "totalReadOutTime": {
       "_instruction": "Enter the total readout time (TRT) as the time interval between acquisition of the first and last k-space lines in the phase-encoding direction during the echo-planar imaging readout.",
       "_embeddedTypes": [
