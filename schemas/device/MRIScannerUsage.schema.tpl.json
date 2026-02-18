@@ -67,6 +67,14 @@
       "_instruction": "Enter the shape of the magnetization transfer (MT) radiofrenquency pulse waveform.",
       "type": "controlledTerms:PulseShape"
     },
+    "numberOfExcitations": {
+      "_instruction": "Enter the number of excitation (NEX) which defines how many times each k-space is acquired and averaged. The number varies within a range between 1 and x",
+      "type": "integer"
+    },
+    "numberOfSlices": {
+      "_instruction": "Enter the number of slices corresponding to the number of image (2D) slices acquired.",
+      "type": "integer"
+    },
     "numberOfVolumeDiscarded": {
       "_instruction": "Enter number of volumes discarded before the first volume.",
       "type": "integer"
