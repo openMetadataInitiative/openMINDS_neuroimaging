@@ -84,6 +84,12 @@
       "minItems": 3,
       "type": "array"
     },
+    "receiverBandwidth": {
+      "_instruction": "Enter the receive bandwidth corresponding to the range of frequencies per pixel during signal acquisition (Hz/pixel).",
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ]
+    },
     "repetitionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
