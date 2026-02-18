@@ -24,7 +24,7 @@
     "mountingLocation": {
       "_instruction": "Add the position of the coil relative to the subject's anatomy (e.g., head, knee, body).",
       "_linkedTypes": [
-        "controlledTerms:AnatomicalRegion"
+        "controlledTerms:ExternalBodyStructure"
       ]
     },
     "signalDirectionality": {
@@ -36,7 +36,7 @@
     "targetAnatomyCoverage": {
       "_instruction": "Add the anatomical region(s) the coil is designed to cover.",
       "_linkedTypes": [
-        "controlledTerms:AnatomicalRegion"
+        "controlledTerms:ExternalBodyStructure"
       ]
     }
   }
