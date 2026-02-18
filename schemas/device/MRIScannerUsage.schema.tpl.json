@@ -113,6 +113,14 @@
       "_instruction": "Enter the echo time of this acquisition (TR)."
     },
     "sliceGap": {
+      "_instruction": "Enter the inter slice distance of this scan.",
+      "_embeddedTypes": [
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
+      ]
+    },
+    "sliceThickness": {
+      "_instruction": "Enter the depth of each slice.",
       "_embeddedTypes": [
         "core:QuantitativeValue",
         "core:QuantitativeValueRange"
