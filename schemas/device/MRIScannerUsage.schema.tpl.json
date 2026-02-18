@@ -21,16 +21,16 @@
       "type" : "array"
     },
     "dwellTime": {
+      "_instruction": "Enter the dwell time of this aquistion.",
       "_embeddedTypes": [
         "core:QuantitativeValue"
-      ],
-      "_instruction": "Enter the dwell time of this aquistion."
+      ]
     },
     "echoTime": {
+      "_instruction": "Enter the echo times of this acquisition (TE).",
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the echo times of this acquisition (TE).",
       "minItems": 1,
       "type": "array",
       "uniqueItems": true
@@ -42,16 +42,17 @@
       ]
     },
     "flipAngle": {
+      "_instruction": "Enter the flip angle of this scan (preferred units: degrees).",
       "_embeddedTypes": [
         "core:QuantitativeValue"
-      ],
-      "_instruction": "Enter the flip angle of this scan (preferred units: degrees)."
+      ]
     },
     "gradientCorrection": {
       "_instruction": "Enter the method used for gradient correction",
       "type": "controlledTerms:AnalysisTechnique" 
     },
     "inversionTime": {
+      "_instruction": "Enter the inversion time of this aquistion.",
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ]
@@ -84,7 +85,7 @@
       "type": "integer"
     },
     "numberOfVolumeDiscarded": {
-      "_instruction": "Enter number of volumes discarded before the first volume.",
+      "_instruction": "Enter the number of volumes discarded before the first volume.",
       "type": "integer"
     },
     "parallelAcquisitionTechnique": {
@@ -107,10 +108,10 @@
       ]
     },
     "repetitionTime": {
+      "_instruction": "Enter the echo time of this acquisition (TR).",
       "_embeddedTypes": [
         "core:QuantitativeValue"
-      ],
-      "_instruction": "Enter the echo time of this acquisition (TR)."
+      ]
     },
     "sliceGap": {
       "_instruction": "Enter the inter slice distance of this scan.",
@@ -124,8 +125,7 @@
       "_embeddedTypes": [
         "core:QuantitativeValue",
         "core:QuantitativeValueRange"
-      ],
-      "_instruction": "Enter the inter slice distance of this scan."
+      ]
     },
     "sliceTiming": {
       "_instruction": "Enter the time in which each slice have been acquired within each volume, relative to the beginning of the volume acquisition.",
@@ -165,10 +165,10 @@
       ]
     },
     "voxelSize": {
+      "_instruction": "Enter voxel size this image: in this order x,y,z.",
       "_embeddedTypes": [
         "core:QuantitativeValueArray"
-      ],
-      "_instruction": "Enter voxel size this image: in this order x,y,z."
+      ]
     }
   }
 }
