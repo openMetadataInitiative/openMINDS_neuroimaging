@@ -54,8 +54,16 @@
     "inversionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
-      ],
-      "_instruction": "Enter the inversion time of this aquistion."
+      ]
+    },
+    "matrixSize": {
+      "_instruction": "Enter the matrix size determining the in-plane resolution (frequency x phase x partitions)",
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 3,
+      "minItems": 2,
+      "type": "array"
     },
     "MRIWeighting": {
       "_instruction": "Add MRI weighting type (e.g.T1Weighting, T2Weighting, R2Weighting, PDWeighting). Note: these terms are not standadized, they merely communicate the image contrast is dominated by the chosen tissue parameter",
