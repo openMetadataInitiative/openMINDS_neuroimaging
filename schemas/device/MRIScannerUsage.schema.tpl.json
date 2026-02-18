@@ -7,6 +7,10 @@
     "sliceTiming"
   ],
   "properties": {
+    "accelerationFactor": {
+      "_instruction": "Enter the acceleration factor (R) corresponding to reduce number of phase-encoding steps, preferably defined between 2 and 6 .",
+      "type": "integer"
+    },
     "diffusionEncodingParameters": {
       "_instruction": "Enter two files corresponding to b-values and b-vectors parameters used to generate diffusion images.",
       "_linkedTypes": [
