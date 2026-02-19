@@ -35,6 +35,12 @@
       "type": "array",
       "uniqueItems": true
     },
+    "fatSuppressionTechnique": {
+      "_instruction": "Enter a fat suppression technique used to reduce fat signal (e.g. SPIR, SPAIR, STIR).",
+      "_linkedCategories": [
+        "controlledTerms:MRIFatSuppressionTechnique"
+      ]
+    },
     "fieldOfView": {
       "_instruction": "Add the field of view of this image.",
       "_linkedCategories": [
