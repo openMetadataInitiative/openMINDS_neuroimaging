@@ -172,7 +172,7 @@
       ]
     },
     "voxelSize": {
-      "_instruction": "Enter voxel size this image: in this order x,y,z.",
+      "_instruction": "Enter the voxel size as the physical dimensions of a single image voxel in the x, y, and z directions, expressed in millimeters. This value is typically derived from the field of view, matrix size, and slice thickness and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValueArray"
       ]
