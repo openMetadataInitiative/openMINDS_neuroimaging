@@ -7,7 +7,7 @@
     ], 
   "properties": {
     "behavioralProtocol": {
-      "_instruction": "Add all behavioral protocols that were performed during this session.",
+      "_instruction": "Add the behavioral protocol or protocols applied during this acquisition, including all tasks or observed behavioral conditions (for example, resting state).",
       "_linkedTypes": [
         "core:BehavioralProtocol"
       ],
