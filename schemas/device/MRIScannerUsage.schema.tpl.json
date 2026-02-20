@@ -141,7 +141,7 @@
       ]
     },
     "spatialEncoding": {
-      "_instruction": "Add how spatial information was encoded. Examples include 'frequencyPhaseEncoding' (2D) and 'frequencyPhasePhaseEncoding' (3D).",
+      "_instruction": "Add the spatial encoding scheme used to acquire the data, specifying how frequency, phase, and partition encoding were applied (for example, frequency–phase encoding for two-dimensional acquisitions or frequency–phase–phase encoding for three-dimensional acquisitions). This information is defined in the sequence protocol and can be retrieved from the DICOM header.",
       "_linkedTypes": [
         "controlledTerms:SpatialEncoding"
       ]
