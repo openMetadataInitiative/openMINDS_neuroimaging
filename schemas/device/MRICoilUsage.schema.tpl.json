@@ -34,8 +34,8 @@
     },
     "targetAnatomyCoverage": {
       "_instruction": "Add the target anatomy, indicating the primary anatomical structure or region intended to be imaged in this acquisition. This field describes the imaging objective (for example, organ, tissue, or structure) and may be derived from the acquisition protocol description.",
-      "_linkedTypes": [
-        "controlledTerms:ExternalBodyStructure"
+      "_linkedCategories": [
+        "anatomicalLocation"
       ]
     }
   }
