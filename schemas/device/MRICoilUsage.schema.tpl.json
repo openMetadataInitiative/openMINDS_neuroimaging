@@ -1,13 +1,15 @@
 {
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "_type": "neuroimaging:MRICoilUsage",
+  "required": [
+    "signalDirectionality"
+  ],
   "properties": {
     "activeElement": {
-      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
-      "_linkedTypes": [
-        "core:GenericIdentifier",
-        "string"
-      ],
+      "_instruction": "Only applicable to radiofrequency (RF) coils! Enter the active coil element identifier(s) corresponding to the transmitting and/or receiving elements that were electrically active during this acquisition; the number of identifiers typically matches the number of physical elements in the selected RF coil and may be fewer if some elements were disabled.",
+      "items": {
+        "type": "string"
+      },
       "minItems": 1,
       "type": "array",
       "uniqueItems": true
@@ -19,19 +21,16 @@
       ]
     },
     "mountingLocation": {
-      "_instruction": "Describe how the coil is mounted or positioned relative to the subject (e.g., head, knee, body).",
+      "_instruction": "Add the anatomical mounting location of the coil, indicating where the coil was positioned on or around the subject (for example, head, neck, knee, or torso). This information is typically applicable to radiofrequency (RF) coils and may be omitted for gradient or shim systems.",
       "_linkedTypes": [
-        "controlledTerms:AnatomicalRegion"
+        "controlledTerms:ExternalBodyRegion"
       ]
     },
-    "radiofrequencyCoilRole": {
-      "_instruction": "Add the functional role of the RF coil (e.g., transmit, receive, transmit/receive).",
+    "signalDirectionality": {
+      "_instruction": "Add the signal directionality of the coil, indicating whether it was used for signal transmission, reception, or both. This information is typically defined in the system configuration and can be retrieved from the DICOM header or scanner hardware metadata.",
       "_linkedTypes": [
-        "controlledTerms:MRIradioFrequencyCoilRole"
+        "controlledTerms:SignalDirectionality"
       ]
     }
-  },
-  "required": [
-    "radioFrequencyCoilRole"
-  ]
+  }
 }
