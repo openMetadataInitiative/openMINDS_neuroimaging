@@ -88,7 +88,7 @@
       "type": "integer"
     },
     "numberOfSlices": {
-      "_instruction": "Enter the number of slices corresponding to the number of image (2D) slices acquired.",
+      "_instruction": "Enter the number of slices corresponding to the total number of two-dimensional image slices acquired in this scan. This value is defined by the acquisition protocol and can be retrieved from the DICOM header.",
       "type": "integer"
     },
     "numberOfVolumeDiscarded": {
