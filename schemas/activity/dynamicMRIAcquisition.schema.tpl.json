@@ -21,10 +21,10 @@
       ],
       "_instruction": "Enter the delay time, defined as the time interval between a protocol-defined reference event (for example, stimulus onset, contrast administration, or physiological trigger) and the start of dynamic image acquisition, expressed in seconds. This value should reflect the actual timing applied during the scan."
     },
-    "numberOfVolumesDiscardedByUser": {
-      "_instruction": "Enter number of volumes discarded by user before the first volume.",
-      "type": "number"
-    },
+"numberOfDiscardedVolumes": {
+"_instruction": "Enter the number of image volumes discarded by the operator or analyst prior to post-processing, including initial equilibration volumes and any later volumes removed due to artifacts or instability. This value should reflect the total user-defined exclusion applied after acquisition.",
+"type": "integer"
+},
     "volumeAcquisitionTime": {
       "_embeddedTypes": [
         "core:QuantitativeValue"
