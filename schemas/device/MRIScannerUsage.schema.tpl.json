@@ -121,7 +121,7 @@
       ]
     },
     "sliceGap": {
-      "_instruction": "Enter the inter slice distance of this scan.",
+      "_instruction": "Enter the slice gap, defined as the distance between adjacent slices, expressed in millimeters and excluding the slice thickness; if slice spacing is uniform, provide a single value, and if it varies across the volume, provide the corresponding range. This information is specified in the acquisition protocol and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValue",
         "core:QuantitativeValueRange"
