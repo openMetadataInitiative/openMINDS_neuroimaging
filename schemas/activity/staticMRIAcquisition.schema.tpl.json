@@ -47,7 +47,7 @@
       ]
     },
     "registrationData": {
-      "_instruction": "Add the registration file corresponding to structural MRI relevant for this acquisition.",
+      "_instruction": "Add the registration data used for this acquisition, linking to the transformation and/or reference files applied during image alignment in post-processing. If no registration was performed, leave this field null.",
       "_linkedTypes": [
         "core:File"
       ]
