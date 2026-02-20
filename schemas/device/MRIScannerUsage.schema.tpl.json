@@ -80,7 +80,7 @@
       ]
     },
     "MTPulseShape": {
-      "_instruction": "Enter the shape of the magnetization transfer (MT) radiofrenquency pulse waveform.",
+      "_instruction": "Enter the shape of the magnetization transfer (MT) radiofrequency (RF) pulse waveform used in this acquisition. This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "type": "controlledTerms:PulseShape"
     },
     "numberOfExcitations": {
