@@ -19,7 +19,7 @@
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ],
-      "_instruction": "Enter the arbitrary delay time set by user before each volume acquisition."
+      "_instruction": "Enter the delay time, defined as the time interval between a protocol-defined reference event (for example, stimulus onset, contrast administration, or physiological trigger) and the start of dynamic image acquisition, expressed in seconds. This value should reflect the actual timing applied during the scan."
     },
     "numberOfVolumesDiscardedByUser": {
       "_instruction": "Enter number of volumes discarded by user before the first volume.",
