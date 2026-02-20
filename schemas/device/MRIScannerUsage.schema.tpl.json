@@ -153,7 +153,7 @@
       ]
     },
     "transmitterBandwidth": {
-      "_instruction": "Enter the transmit bandwidth corresponding to range of frequencies excited by the radiofrequency pulse to image a specific slice (Hz/pixel).",
+      "_instruction": "Enter the transmitter bandwidth, defined as the frequency range excited by the radiofrequency pulse per pixel, expressed in hertz per pixel. This value is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ]
