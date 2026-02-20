@@ -28,7 +28,7 @@
       "type": "array"
     },
     "input": {
-      "_instruction": "Add the state of the subject or tissue sample before this session.",
+      "_instruction": "Add the specimen (subject or tissue sample) in the physical and biological state in which it was scanned, referencing the corresponding specimen record at the time of imaging.",
       "_linkedTypes": [
         "core:SubjectState",
         "core:TissueSampleState"
