@@ -35,7 +35,7 @@
       ]
     },
     "motionCorrection": {
-      "_instruction": "Add the calibration file used for motion correction, corresponding to single-band reference image, for this volume.",
+      "_instruction": "Add the motion correction data used for this acquisition, linking to the calibration files or reference images applied during image reconstruction or post-processing. If no motion correction was performed, leave this field null.",
       "_linkedTypes": [
         "core:File"
       ]
