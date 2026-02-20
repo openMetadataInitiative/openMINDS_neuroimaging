@@ -55,7 +55,7 @@
       ]
     },
     "gradientCorrection": {
-      "_instruction": "Enter the method used for gradient correction",
+      "_instruction": "Add the gradient correction method applied during image reconstruction. This information is typically defined by the scanner system and can be retrieved from the reconstruction settings or DICOM header.",
       "type": "controlledTerms:AnalysisTechnique" 
     },
     "inversionTime": {
