@@ -84,7 +84,7 @@
       "type": "controlledTerms:PulseShape"
     },
     "numberOfExcitations": {
-      "_instruction": "Enter the number of excitation (NEX) which defines how many times each k-space is acquired and averaged. The number varies within a range between 1 and x",
+      "_instruction": "Enter the number of excitations (NEX), defined as the number of times each k-space line is acquired and averaged to improve signal-to-noise ratio; if no averaging was performed, set this value to 1. This value is specified in the acquisition protocol and can be retrieved from the DICOM header.",
       "type": "integer"
     },
     "numberOfSlices": {
