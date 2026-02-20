@@ -169,7 +169,9 @@
       "_linkedTypes": [
         "controlledTerms:DeviceType",
         "neuroimaging:MRICoilUsage"
-      ]
+      ],
+      "minItems": 2,
+      "type" : "array"
     },
     "voxelSize": {
       "_instruction": "Enter the voxel size as the physical dimensions of a single image voxel in the x, y, and z directions, expressed in millimeters. This value is typically derived from the field of view, matrix size, and slice thickness and can be retrieved from the DICOM header.",
