@@ -49,7 +49,7 @@
       ]
     },
     "flipAngle": {
-      "_instruction": "Enter the flip angle of this scan (preferred units: degrees).",
+      "_instruction": "Enter the flip angle, defined as the angle by which the net magnetization is rotated by the radiofrequency excitation pulse, expressed in degrees. This value is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ]
