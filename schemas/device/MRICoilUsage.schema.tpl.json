@@ -6,7 +6,7 @@
   ],
   "properties": {
     "activeElement": {
-      "_instruction": "If applicable, list the identifiers of the active coil elements or channels.",
+      "_instruction": "Only applicable to radiofrequency (RF) coils! Enter the active coil element identifier(s) corresponding to the transmitting and/or receiving elements that were electrically active during this acquisition; the number of identifiers typically matches the number of physical elements in the selected RF coil and may be fewer if some elements were disabled.",
       "_linkedTypes": [
         "core:GenericIdentifier",
         "string"
