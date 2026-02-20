@@ -65,7 +65,7 @@
       ]
     },
     "matrixSize": {
-      "_instruction": "Enter the matrix size determining the in-plane 2D or 3D resolution (frequency x phase x partitions)",
+      "_instruction": "Enter the matrix size as the number of samples in the frequency and phase encoding directions for two-dimensional acquisitions (frequency × phase), or in the frequency, phase, and partition encoding directions for three-dimensional acquisitions (frequency × phase × partitions). This information is defined by the acquisition protocol and can be retrieved from the DICOM header.",
       "items": {
         "type": "integer"
       },
