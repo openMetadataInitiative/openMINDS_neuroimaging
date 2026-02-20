@@ -100,7 +100,7 @@
       "type": "controlledTerms:MRIparallelAcquisitionTechnique"
     },
     "phaseEncodingDirection": {
-      "_instruction": "Enter the phase encoding direction as a signed unit vector in the scanner or image coordinate system (e.g., [+/-1, 0, 0], [0, +/-1, 0], or [0, 0, +/-1]), where the single nonzero component indicates the x, y, or z axis of phase encoding and the sign indicates the polarity of k-space traversal.",
+      "_instruction": "Enter the phase encoding direction as a signed unit vector in the scanner or image coordinate system (for example, [±1, 0, 0], [0, ±1, 0], or [0, 0, ±1]), where the nonzero component indicates the encoding axis and the sign specifies the polarity of k-space traversal.",
       "items": {
         "type": "integer"
       },
