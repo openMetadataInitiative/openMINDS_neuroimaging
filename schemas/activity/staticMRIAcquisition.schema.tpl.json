@@ -20,7 +20,7 @@
       ]
     },
     "distortionCorrection": {
-      "_instruction": "Add the calibration file corresponding to images or field maps used for correction of inhomogeneities in B0 field of this acquisition.",
+      "_instruction": "Add the distortion correction data used for this acquisition, linking to the calibration files applied during image reconstruction or post-processing. If no distortion correction was performed, leave this field null.",
       "_linkedTypes": [
         "core:File"
       ],
