@@ -53,7 +53,7 @@
       ]
     },
     "specimenOrientation": {
-      "_instruction": "Add the anatomical orientation of the specimen in the scanner.",
+      "_instruction": "Add the specimen orientation as the anatomical directions corresponding to the scanner X, Y, and Z axes, describing the alignment of the specimen’s anatomy with the scanner coordinate system. Note that this orientation may differ from the prescribed slice orientation, especially in nonstandard specimen positioning.",
       "_linkedTypes": [
         "controlledTerms:AnatomicalAxesOrientation"
       ]
