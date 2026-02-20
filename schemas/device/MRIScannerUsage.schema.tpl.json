@@ -128,7 +128,7 @@
       ]
     },
     "sliceThickness": {
-      "_instruction": "Enter the depth of each slice.",
+      "_instruction": "Enter the slice thickness, defined as the physical thickness of each acquired slice, expressed in millimeters; if uniform, provide a single value, and if variable, provide the corresponding range. This value is specified in the acquisition protocol and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValue",
         "core:QuantitativeValueRange"
