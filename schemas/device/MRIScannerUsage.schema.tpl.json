@@ -96,7 +96,7 @@
       "type": "integer"
     },
     "parallelAcquisitionTechnique": {
-      "_ instruction": "Enter the parallel acquisition technique sequence name for this scan. 'GRAPPA' for most Siemens machines and 'SENSE' for most Philips machines.",
+      "_ instruction": "Add the parallel acquisition technique used for this scan (for example, SENSE or GRAPPA). This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "type": "controlledTerms:MRIparallelAcquisitionTechnique"
     },
     "phaseEncodingDirection": {
