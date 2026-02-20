@@ -165,7 +165,7 @@
       ]
     },
     "usedCoils": {
-      "_instruction": "Add the radiofrequency coils used for this experiment. Corresponds to DICOM tags (0018,9042) [MR Receive Coil Sequence Attribute] and (0018,9049) [MR Transmit Coil Sequence Attribute]. Preferably, create an object describing the coil (e.g., an instance of neuroimaging:MRIRadiofrequencyCoil); if less information is available, provide at least the device type.",
+      "_instruction": "Add all coils used for this acquisition, including built-in and external transmit, receive, and gradient-related coils, corresponding to the relevant DICOM coil attributes. Preferably provide structured coil descriptions; if unavailable, specify at least the device type.",
       "_linkedTypes": [
         "controlledTerms:DeviceType",
         "neuroimaging:MRICoilUsage"
