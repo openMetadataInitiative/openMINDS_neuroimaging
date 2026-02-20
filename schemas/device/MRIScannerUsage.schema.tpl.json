@@ -8,7 +8,8 @@
   ],
   "properties": {
     "accelerationFactor": {
-      "_instruction": "Enter the acceleration factor (R) corresponding to reduce number of phase-encoding steps, preferably defined between 2 and 6 .",
+      "_instruction": "Enter the acceleration factor (R), defined as the ratio of fully sampled to reduced k-space acquisition, with R ≥ 1 and R = 1 indicating no acceleration. This value is specified in the sequence protocol and can be retrieved from the DICOM header.",
+      "minimum": 1,
       "type": "integer"
     },
     "diffusionEncodingParameters": {
