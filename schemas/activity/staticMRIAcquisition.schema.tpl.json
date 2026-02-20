@@ -8,7 +8,7 @@
   ],
   "properties": {
     "contrastAgent": {
-      "_instruction": "Add the contrast agent used for this scan.",
+      "_instruction": "Add the contrast agent(s) administered for this acquisition, including for each the agent identity and administered amount; if no contrast agent was used, leave this field null. Include all agents given prior to or during the scan.",
       "_linkedTypes": [
         "chemicals:AmountOfChemical"
       ]
