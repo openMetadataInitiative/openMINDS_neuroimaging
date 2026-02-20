@@ -92,7 +92,7 @@
       "type": "integer"
     },
     "numberOfVolumeDiscarded": {
-      "_instruction": "Enter the number of volumes discarded before the first volume.",
+      "_instruction": "Enter the number of initial volumes automatically discarded by the scanner before saving data, typically to allow signal stabilization at the beginning of the acquisition. This value is defined by the acquisition protocol and can be retrieved from the DICOM header.",
       "type": "integer"
     },
     "parallelAcquisitionTechnique": {
