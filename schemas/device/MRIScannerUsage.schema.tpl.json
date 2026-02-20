@@ -74,7 +74,7 @@
       "type": "array"
     },
     "MRIWeighting": {
-      "_instruction": "Add MRI weighting type (e.g.T1Weighting, T2Weighting, R2Weighting, PDWeighting). Note: these terms are not standadized, they merely communicate the image contrast is dominated by the chosen tissue parameter",
+      "_instruction": "Enter the magnetic resonance imaging weighting type describing the dominant source of image contrast. This designation reflects the contrast determined by repetition time, echo time, and inversion time and can be identified from the sequence protocol.",
       "_linkedTypes": [
         "controlledTerms:MRIWeighting"
       ]
