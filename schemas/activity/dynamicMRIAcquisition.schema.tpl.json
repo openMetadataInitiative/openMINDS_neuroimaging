@@ -1,5 +1,5 @@
 {
-  "_extends": "activity/staticMRIAcquisition.schema.tpl.json",
+  "_extends": "activity/MRIAcquisition.schema.tpl.json",
   "_type": "neuroimaging:DynamicMRIAcquisition",
   "required": [
     "behavioralProtocol",
