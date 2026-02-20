@@ -120,6 +120,15 @@
         "core:QuantitativeValue"
       ]
     },
+    "sliceAngulation": {
+      "_instruction": "Enter the slice plane orientation as a three-element unit normal vector [nx, ny, nz] in scanner coordinates, where each component is a dimensionless floating-point value between -1 and +1 and the vector has unit length (nx² + ny² + nz² = 1). For non-oblique acquisitions, the vector aligns with a principal axis (for example, [0, 0, 1]), and for oblique acquisitions, the components are fractional.",
+      "items": {
+        "type": "float"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
     "sliceGap": {
       "_instruction": "Enter the slice gap, defined as the distance between adjacent slices, expressed in millimeters and excluding the slice thickness; if slice spacing is uniform, provide a single value, and if it varies across the volume, provide the corresponding range. This information is specified in the acquisition protocol and can be retrieved from the DICOM header.",
       "_embeddedTypes": [
