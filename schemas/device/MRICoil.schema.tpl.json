@@ -7,6 +7,12 @@
       "minimum": 1,
       "type": "integer"
     },
+    "intendedMountingLocation": {
+      "_instruction": "Add the mounting location intended by the manufacturer (e.g., head, neck, knee).",
+      "_linkedTypes": [
+        "controlledTerms:ExternalBodyRegion"
+      ]
+    },
     "mountingType": {
       "_instruction": "Add the coil mounting type (e.g., built-in, external, interventional, wearable).",
       "_linkedTypes": [
