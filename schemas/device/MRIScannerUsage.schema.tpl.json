@@ -22,7 +22,7 @@
       "type" : "array"
     },
     "dwellTime": {
-      "_instruction": "Enter the dwell time of this aquistion.",
+      "_instruction": "Enter the dwell time, defined as the time interval between successive data samples during signal readout, which determines the receiver bandwidth and frequency resolution. This value is typically set automatically by the sequence and can be retrieved from the sequence protocol or DICOM header.",
       "_embeddedTypes": [
         "core:QuantitativeValue"
       ]
