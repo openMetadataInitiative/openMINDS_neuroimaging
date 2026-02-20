@@ -32,7 +32,7 @@
       "_instruction": "Enter duration of volume acquisition."
     },
     "volumeTiming": {
-      "_instruction": "Enter acquisition times of each vloume.",
+      "_instruction": "Enter the volume timing as an array specifying the acquisition time of each volume relative to the start of the dynamic scan, expressed in seconds, with one entry per acquired volume. These values may be derived from the repetition time or extracted from the acquisition metadata.",
       "_linkedTypes": [
         "core:QuantitativeValueArray"
       ]
