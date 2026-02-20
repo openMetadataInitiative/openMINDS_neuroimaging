@@ -23,7 +23,7 @@
     "mountingLocation": {
       "_instruction": "Add the anatomical mounting location of the coil, indicating where the coil was positioned on or around the subject (for example, head, neck, knee, or torso). This information is typically applicable to radiofrequency (RF) coils and may be omitted for gradient or shim systems.",
       "_linkedTypes": [
-        "controlledTerms:ExternalBodyStructure"
+        "controlledTerms:ExternalBodyRegion"
       ]
     },
     "signalDirectionality": {
