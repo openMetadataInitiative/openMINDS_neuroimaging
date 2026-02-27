@@ -4,7 +4,7 @@
   "required": [
     "behavioralProtocol",
     "volumeAcquisitionTime"
-    ], 
+  ], 
   "properties": {
     "behavioralProtocol": {
       "_instruction": "Add the behavioral protocol or protocols applied during this acquisition, including all tasks or observed behavioral conditions (for example, resting state).",
