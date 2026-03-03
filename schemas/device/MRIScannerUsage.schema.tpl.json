@@ -157,7 +157,7 @@
     },
     "sliceTiming": {
       "_instruction": "Enter the slice timing, defined as the acquisition time of each slice within a volume relative to the start of the volume acquisition. This information is determined by the sequence timing and can be retrieved from the DICOM header.",
-      "_linkedTypes": [
+      "_embeddedTypes": [
         "core:QuantitativeValueArray"
       ]
     },
