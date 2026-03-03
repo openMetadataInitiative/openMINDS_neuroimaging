@@ -167,10 +167,10 @@
         "controlledTerms:SpatialEncoding"
       ]
     },
-    "spoilingType": {
-      "_instruction": "Add the spoiling type used in this acquisition, specifying the method applied to eliminate residual transverse magnetization (for example, radiofrequency spoiling or gradient spoiling). This information is defined in the sequence protocol and can be retrieved from the DICOM header.",
+    "spoilingTechnique": {
+      "_instruction": "Add the spoiling technique used in this acquisition, specifying the method applied to eliminate residual transverse magnetization (for example, radiofrequency spoiling or gradient spoiling). This information is defined in the sequence protocol and can be retrieved from the DICOM header.",
       "_linkedTypes": [
-        "controlledTerms:MRISpoilingType"
+        "controlledTerms:MRISpoilingTechnique"
       ]
     },
     "transmitterBandwidth": {
