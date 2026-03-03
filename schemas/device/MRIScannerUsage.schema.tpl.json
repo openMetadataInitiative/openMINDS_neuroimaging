@@ -76,13 +76,13 @@
       "type": "array"
     },
     "MRIWeighting": {
-      "_instruction": "Enter the magnetic resonance imaging weighting type describing the dominant source of image contrast. This designation reflects the contrast determined by repetition time, echo time, and inversion time and can be identified from the sequence protocol.",
+      "_instruction": "Add the magnetic resonance imaging weighting type describing the dominant source of image contrast. This designation reflects the contrast determined by repetition time, echo time, and inversion time and can be identified from the sequence protocol.",
       "_linkedTypes": [
         "controlledTerms:MRIWeighting"
       ]
     },
     "MTPulseShape": {
-      "_instruction": "Enter the shape of the magnetization transfer (MT) radiofrequency (RF) pulse waveform used in this acquisition. This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
+      "_instruction": "Add the shape of the magnetization transfer (MT) radiofrequency (RF) pulse waveform used in this acquisition. This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "_linkedTypes": [
         "controlledTerms:PulseShape"
       ]
