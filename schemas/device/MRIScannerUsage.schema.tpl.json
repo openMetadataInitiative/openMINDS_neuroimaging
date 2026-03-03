@@ -38,7 +38,7 @@
     },
     "fatSuppressionTechnique": {
       "_instruction": "Add the fat suppression technique used for this acquisition (for example, fat saturation, SPAIR, STIR, or Dixon); if no fat suppression was applied, leave this field null. This information is typically specified in the sequence protocol and can be retrieved from the DICOM header.",
-      "_linkedCategories": [
+      "_linkedTypes": [
         "controlledTerms:MRIFatSuppressionTechnique"
       ]
     },
