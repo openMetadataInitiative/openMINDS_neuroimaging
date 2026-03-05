@@ -1,6 +1,10 @@
 {
   "_extends": "/core/schemas/products/device.schema.tpl.json",
   "_type": "neuroimaging:MRICoil",
+  "required": [
+    "elementCount",
+    "mountingType"
+  ],
   "properties": {
     "elementCount": {
       "_instruction": "Enter the total number of coil elements.",
