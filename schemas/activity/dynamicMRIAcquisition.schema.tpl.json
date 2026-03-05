@@ -1,0 +1,41 @@
+{
+  "_extends": "activity/MRIAcquisition.schema.tpl.json",
+  "_type": "neuroimaging:DynamicMRIAcquisition",
+  "required": [
+    "behavioralProtocol",
+    "volumeAcquisitionTime"
+  ], 
+  "properties": {
+    "behavioralProtocol": {
+      "_instruction": "Add the behavioral protocol or protocols applied during this acquisition, including all tasks or observed behavioral conditions (for example, resting state).",
+      "_linkedTypes": [
+        "core:BehavioralProtocol"
+      ],
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "delayTime": {
+      "_instruction": "Enter the delay time, defined as the time interval between a protocol-defined reference event (for example, stimulus onset, contrast administration, or physiological trigger) and the start of dynamic image acquisition, expressed in seconds. This value should reflect the actual timing applied during the scan.",
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ]
+    },
+    "numberOfDiscardedVolumes": {
+      "_instruction": "Enter the number of image volumes discarded by the operator or analyst prior to post-processing, including initial equilibration volumes and any later volumes removed due to artifacts or instability. This value should reflect the total user-defined exclusion applied after acquisition.",
+      "type": "integer"
+    },
+    "volumeAcquisitionTime": {
+      "_instruction": "Enter the volume acquisition time, defined as the time required to acquire a single image volume, expressed in seconds. This value is typically equivalent to the repetition time for volume-based acquisitions and can be retrieved from the sequence timing information in the DICOM header.",
+      "_embeddedTypes": [
+        "core:QuantitativeValue"
+      ]
+    },
+    "volumeTiming": {
+      "_instruction": "Enter the volume timing as an array specifying the acquisition time of each volume relative to the start of the dynamic scan, expressed in seconds, with one entry per acquired volume. These values may be derived from the repetition time or extracted from the acquisition metadata.",
+      "_embeddedTypes": [
+        "core:QuantitativeValueArray"
+      ]
+    }
+  }
+}
