@@ -100,7 +100,7 @@
       "type": "integer"
     },
     "parallelAcquisitionTechnique": {
-      "_ instruction": "Add the parallel acquisition technique used for this scan (for example, SENSE or GRAPPA). This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
+      "_instruction": "Add the parallel acquisition technique used for this scan (for example, SENSE or GRAPPA). This information is specified in the sequence protocol and can be retrieved from the DICOM header.",
       "_linkedTypes": [
         "controlledTerms:MRIParallelAcquisitionTechnique"
       ]
