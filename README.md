@@ -12,7 +12,7 @@
 [![GitHub][license-shield]][license-url]
 [![GitHub contributors][contributors-shield]][contributors-url]
 
-The **openMINDS_neuroimaging** repository hosts one of the schema modules of the **openMINDS metadata framework**. It defines modular metadata schemas for in-depth descriptions of neuroimaging experiments.
+The **openMINDS_neuroimaging** repository hosts one of the schema modules of the **openMINDS metadata framework** that build the overall openMINDS metadata model. It defines modular metadata schemas for in-depth descriptions of neuroimaging experiments.
 
 To generally learn more about the openMINDS metadata framework please go to :arrow_right: [**ReadTheDocs**][docu-url].  
 Or explore directly the metadata schemas of the openMINDS_neuroimaging metadata model under :arrow_right: [**schema specifications**][docu-neuroimaging-url].
